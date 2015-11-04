@@ -25,9 +25,8 @@ class GenHarmony
     void normalizeAmplitudes();
     void computeFitness( float target );
     inline float roughness() const { return Roughness::Df( aggregate ); }
-    std::shared_ptr< GenHarmony > crossover( const std::shared_ptr< GenHarmony > partner );
+    std::shared_ptr< GenHarmony > crossover( const std::shared_ptr< GenHarmony > partner ) const;
     void mutate( float mutationRate );
-    void writeFile( const std::string& filename ) const;
     
   private:
     inline float ftom( float frequency ) {

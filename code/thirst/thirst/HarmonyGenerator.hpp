@@ -18,16 +18,14 @@ class GenHarmony;
 
 class HarmonyGenerator {
   public:
-    HarmonyGenerator() { }
     HarmonyGenerator( std::vector< std::pair< float, float > > source, int numSolutions = 1, float mutationRate = 0.001f, int numGenerators = 200 );
-    ~HarmonyGenerator();
     
     void setup();
     void update();
     inline float mtof( float midi ) { return ( pow( 2, ( ( midi - 69 ) / 12) ) * 440.0 ); }
     inline bool isDone() { return numSolutions == runCounter; }
     
-  private: /* member functions */
+  private:
     std::vector< float > getFitnesses();
     std::vector< int > scaledFitnesses( const std::vector< float >& fitnesses );
     int scale( float input, float in_min, float in_high, float out_min, float out_high );

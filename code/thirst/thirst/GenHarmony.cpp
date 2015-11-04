@@ -17,7 +17,6 @@ using namespace std;
 GenHarmony::GenHarmony( unsigned long numPartials, float lowNote, float highNote, bool instantiate )
 : freqRange{ lowNote, highNote }
 {
-
     aggregate.reserve( numPartials );
     
     Random rand{ lowNote, highNote };
@@ -26,10 +25,10 @@ GenHarmony::GenHarmony( unsigned long numPartials, float lowNote, float highNote
         for ( auto i = 0; i < numPartials; ++i ) {
             aggregate.push_back( pair< float, float >{ rand.randFreq(), rand.randAmp() } );
         }
-        std::sort( aggregate.begin(), aggregate.end(),
-                  [=]( const pair< float, float >& a, const pair< float, float > b ) -> bool {
-                      return a.first < b.first;
-                  } );
+        sort( aggregate.begin(), aggregate.end(),
+            [=]( const pair< float, float >& a, const pair< float, float >& b ) -> bool {
+                return a.first < b.first;
+            } );
     } else {
         for ( auto i = 0; i < numPartials; ++i ) {
             aggregate.push_back( pair< float, float >{ 0.f, 0.f } );
@@ -54,7 +53,7 @@ void GenHarmony::normalizeAmplitudes()
     amps.reserve( aggregate.size() );
     for ( auto& partial : aggregate ) amps.push_back( partial.amplitude );
     
-    const float multiplier = 1.f / *std::max_element( amps.begin(), amps.end() );
+    const float multiplier = 1.f / *max_element( amps.begin(), amps.end() );
     for ( auto& partial : aggregate ) {
         partial.amplitude *= multiplier;
     }
@@ -65,7 +64,7 @@ void GenHarmony::computeFitness( float target )
     fitness = abs( roughness() - target );
 }
 
-shared_ptr< GenHarmony > GenHarmony::crossover( const std::shared_ptr< GenHarmony > partner )
+shared_ptr< GenHarmony > GenHarmony::crossover( const shared_ptr< GenHarmony > partner ) const
 {
     Random rand;
     auto child = make_shared< GenHarmony >( aggregate.size(), freqRange[ 0 ], freqRange[ 1 ] );
@@ -86,9 +85,4 @@ void GenHarmony::mutate( float mutationRate )
             partial.amplitude = rand.randAmp();
         }
     }
-}
-
-void GenHarmony::writeFile( const std::string& filename ) const
-{
-    
 }

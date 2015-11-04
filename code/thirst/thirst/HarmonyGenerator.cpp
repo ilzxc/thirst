@@ -24,14 +24,9 @@ HarmonyGenerator::HarmonyGenerator( vector< pair< float, float > > source, int n
 {
     lowFreq = mtof( 36.f ); // lowest note given the instrumentation (cello C)
     highFreq = mtof( 107.f ); // B-8
-    Roughness::normalizeAmplitudes( source );
-    targetRoughness = Roughness::Df( source );
+    targetRoughness = Roughness::Df( Roughness::normalizeAmplitudes( source ) );
     numPartials = source.size();
     armonie.reserve( numGenerators );
-}
-
-HarmonyGenerator::~HarmonyGenerator()
-{
 }
 
 void HarmonyGenerator::setup()
@@ -69,7 +64,7 @@ void HarmonyGenerator::update()
         }
     }
     
-    std::vector< std::shared_ptr< GenHarmony > > matingPool;
+    vector< shared_ptr< GenHarmony > > matingPool;
     matingPool.reserve( armonie.size() * ( armonie.size() / 10 ) );
     auto scaled = scaledFitnesses( fitnesses );
     for ( auto i = 0; i < scaled.size(); ++i ) {

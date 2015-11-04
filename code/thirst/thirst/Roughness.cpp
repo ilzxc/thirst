@@ -14,19 +14,21 @@
 
 using namespace std;
 
-void Roughness::normalizeAmplitudes( std::vector< std::pair< float, float > >& aggregate )
+aggregate_t Roughness::normalizeAmplitudes( const aggregate_t& aggregate )
 {
+    auto result = aggregate;
+    
     vector< float > amps;
-    amps.reserve( aggregate.size() );
-    for ( auto& partial : aggregate ) amps.push_back( partial.amplitude );
+    amps.reserve( result.size() );
+    for ( auto& partial : result ) amps.push_back( partial.amplitude );
     
     const float multiplier = 1.f / *std::max_element( amps.begin(), amps.end() );
-    for ( auto& partial : aggregate ) {
-        partial.amplitude *= multiplier;
-    }
+    for ( auto& partial : result ) partial.amplitude *= multiplier;
+    
+    return result;
 }
 
-float Roughness::Df( const vector< pair< float, float > >& aggregate )
+float Roughness::Df( const aggregate_t& aggregate )
 {
     auto sum = 0.f;
     

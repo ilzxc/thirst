@@ -11,9 +11,11 @@
 
 #include <vector>
 
+using aggregate_t = std::vector< std::pair< float, float > >;
+
 struct Roughness {
-    static void normalizeAmplitudes( std::vector< std::pair< float, float > >& aggregate );
-    static float Df( const std::vector< std::pair< float, float > >& aggregate );
+    static aggregate_t normalizeAmplitudes( const aggregate_t& aggregate );
+    static float Df( const aggregate_t& aggregate );
     static float d( float f1, float f2, float amp1, float amp2 );
 };
 
