@@ -833,7 +833,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 388.0, 227.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "0.16",
+					"text" : "0.81",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -863,7 +863,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 388.0, 205.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "0.07",
+					"text" : "-0.26",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -898,7 +898,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 311.0, 227.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "1.00",
+					"text" : "0.32",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -928,7 +928,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 311.0, 205.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "0.13",
+					"text" : "0.29",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -963,7 +963,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 234.0, 227.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "0.82",
+					"text" : "0.47",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -993,7 +993,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 234.0, 205.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "-0.09",
+					"text" : "0.02",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -1028,7 +1028,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 157.0, 227.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "0.34",
+					"text" : "1.00",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -1058,7 +1058,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 157.0, 205.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "0.33",
+					"text" : "0.49",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -1093,7 +1093,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 80.0, 227.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "0.09",
+					"text" : "0.99",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -1136,7 +1136,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 80.0, 205.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "-0.31",
+					"text" : "0.16",
 					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 					"textjustification" : 1
 				}
@@ -1195,7 +1195,7 @@
 									"outlettype" : [ "int", "int" ],
 									"patching_rect" : [ 39.0, 99.0, 30.0, 22.0 ],
 									"style" : "",
-									"text" : "t 1 i"
+									"text" : "t 0 i"
 								}
 
 							}
@@ -1424,6 +1424,8 @@
 					"fontsize" : 10.0,
 					"id" : "obj-36",
 					"maxclass" : "number",
+					"maximum" : 4,
+					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
@@ -2112,7 +2114,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "5peak10.txt",
+				"name" : "5peak0.txt",
 				"bootpath" : "~/Documents/music/THIRST/solutions",
 				"type" : "TEXT",
 				"implicit" : 1
