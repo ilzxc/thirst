@@ -1,0 +1,3 @@
+[submodule "code/libo"]
+	path = code/libo
+	url = https://github.com/CNMAT/libo.git
