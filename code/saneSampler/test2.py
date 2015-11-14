@@ -51,8 +51,6 @@ def make_staccs(instrs):
         bndls.append(b)
     return bndls
 
-
-
 ### udp socket stuff:
 def send(message, RINFO): 
     sock.sendto(message.getBytes(), RINFO) ### assumes o.bundle

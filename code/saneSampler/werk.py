@@ -3,95 +3,95 @@ samples1 = ['Ob-ord-A#3-ff.aif', 'Ob-ord-A#3-mf.aif', 'Ob-ord-A#3-pp.aif', 'Ob-o
 
 
 def getNote(sampleString):
-	chars = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
-	found = -1
-	for char in chars:
-		test = sampleString.find(char)
-		if test is not -1:
-			found = test
-			break
-	if found is not -1:
-		sharp = sampleString[found + 1] is '#'
-		if sharp: return sampleString[found : found + 3]
-		else: return sampleString[found : found + 2] 
+    chars = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+    found = -1
+    for char in chars:
+        test = sampleString.find(char)
+        if test is not -1:
+            found = test
+            break
+    if found is not -1:
+        sharp = sampleString[found + 1] is '#'
+        if sharp: return sampleString[found : found + 3]
+        else: return sampleString[found : found + 2] 
 
 def midiffs(target, notes):
-		result = []
-		for note in notes: result.append(abs(target - note))
-		return result
+        result = []
+        for note in notes: result.append(abs(target - note))
+        return result
 
 def mindex(diffs):
-	return diffs.index(min(diffs))
+    return diffs.index(min(diffs))
 
 def getClosestTranspose(target, notes):
-	return target - notes[mindex(midiffs(target, notes))]
+    return target - notes[mindex(midiffs(target, notes))]
 
 def noteToMidi(note):
-	noteDict = {
-		'C' : 0,
-		'D' : 2,
-		'E' : 4,
-		'F' : 5,
-		'G' : 7,
-		'A' : 9,
-		'B' : 11
-	}
-	sharp = 1 if note[1] is '#' else 0
-	octave = int(note[2]) if sharp is 1 else int(note[1])
-	start = 12 * (octave + 1)
-	return start + noteDict[note[0]] + sharp
+    noteDict = {
+        'C' : 0,
+        'D' : 2,
+        'E' : 4,
+        'F' : 5,
+        'G' : 7,
+        'A' : 9,
+        'B' : 11
+    }
+    sharp = 1 if note[1] is '#' else 0
+    octave = int(note[2]) if sharp is 1 else int(note[1])
+    start = 12 * (octave + 1)
+    return start + noteDict[note[0]] + sharp
 
 def convertToMidi(notesPresent):
-	if type(notesPresent) is list:
-		result = []
-		for note in notesPresent:
-			result.append(noteToMidi(note))
-		return result
-	else:
-		return noteToMidi(notesPresent)
+    if type(notesPresent) is list:
+        result = []
+        for note in notesPresent:
+            result.append(noteToMidi(note))
+        return result
+    else:
+        return noteToMidi(notesPresent)
 
 def determineNotes(fileStrings):
-	nonAccidentals = ['E', 'B']
-	withAccidentals = ['A', 'C', 'D', 'F', 'G']
-	octaves = [2, 3, 4, 5, 6, 7, 8, 9]
-	result = []
-	for fileString in fileStrings:
-		for note in nonAccidentals:
-			for octave in octaves:
-				test = note + str(octave)
-				if fileString.find(test) is not -1:
-					result.append(test)
-		for note in withAccidentals:
-			for octave in octaves:
-				testWithout = note + str(octave)
-				testWith = note + '#' + str(octave)
-				if fileString.find(testWithout) is not -1:
-					result.append(testWithout)
-				if fileString.find(testWith) is not -1:
-					result.append(testWith)
-	return result
+    nonAccidentals = ['E', 'B']
+    withAccidentals = ['A', 'C', 'D', 'F', 'G']
+    octaves = [2, 3, 4, 5, 6, 7, 8, 9]
+    result = []
+    for fileString in fileStrings:
+        for note in nonAccidentals:
+            for octave in octaves:
+                test = note + str(octave)
+                if fileString.find(test) is not -1:
+                    result.append(test)
+        for note in withAccidentals:
+            for octave in octaves:
+                testWithout = note + str(octave)
+                testWith = note + '#' + str(octave)
+                if fileString.find(testWithout) is not -1:
+                    result.append(testWithout)
+                if fileString.find(testWith) is not -1:
+                    result.append(testWith)
+    return result
 
 def findDynamic(dynamic, fileStrings):
-	result = []
-	for filename in fileStrings:
-		if filename.find(dynamic) is not -1:
-			result.append(filename)
-	return result
+    result = []
+    for filename in fileStrings:
+        if filename.find(dynamic) is not -1:
+            result.append(filename)
+    return result
 
 def targetNote(midi):
-	midi = int(midi)
-	names = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
-	noteNum = midi % 12
-	octave = midi / 12 - 1
-	return names[noteNum] + str(octave)
+    midi = int(midi)
+    names = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+    noteNum = midi % 12
+    octave = midi / 12 - 1
+    return names[noteNum] + str(octave)
 
 def closestNote(noteString, fileStrings):
-	for filename in fileStrings:
-		if filename.find(noteString) is not -1:
-			return (filename, 0)
-	# string not found
-	midiTarget = convertToMidi(noteString)
-	notesMidi = convertToMidi(determineNotes(fileStrings))
-	closest = mindex(midiffs(midiTarget, notesMidi))
-	transpose = midiTarget - notesMidi[closest]
-	return (fileStrings[closest], transpose)
+    for filename in fileStrings:
+        if filename.find(noteString) is not -1:
+            return (filename, 0)
+    # string not found
+    midiTarget = convertToMidi(noteString)
+    notesMidi = convertToMidi(determineNotes(fileStrings))
+    closest = mindex(midiffs(midiTarget, notesMidi))
+    transpose = midiTarget - notesMidi[closest]
+    return (fileStrings[closest], transpose)

@@ -1,4 +1,4 @@
-### edit the following file to ensure all is well across examples
+### edit the following file to define path to oddt:
 
 import sys
 sys.path.append('/Users/ilyarostovtsev/Documents/music/THIRST/code/libo/')
