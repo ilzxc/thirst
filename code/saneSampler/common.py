@@ -77,15 +77,22 @@ def split(interleavedList, numLists = 2):
         result += (interleavedList[i::numLists],)
     return result
 
+def equalLengths(*args):
+    """
+    Verifies that the lenghs of lists passed as arguments
+    are equal.
+    """
+    length = len(args[0])
+    for i in range(1, len(args)):
+        if len(args[i]) is not length:
+            return False
+    return True
 
 def interleave(*args):
     """
     Interleaves lists into a single list.
     """
-    length = len(args[0])
-    for i in range(1, len(args)):
-        if len(args[i]) is not length:
-            return None
+    if not equalLengths(args): return None
     result = []
     for index, datum in enumerate(args[0]):
         result.append(datum)
@@ -93,7 +100,23 @@ def interleave(*args):
             result.append(args[i][index])
     return result
 
-def randomize(options):
+def collect(*args):
+    """
+    Similar to interleave, collects multiple lists into a
+    list of lists. Unlike interleave, corresponding entries
+    are collected into sublists, grouping heterogeous data 
+    together.
+    """
+    if not equalLengths(args): return None
+    result = []
+    for index, datum in enumerate(args[0]):
+        entry = [datum]
+        for i in range(1, len(args)):
+            entry.append(args[i][index])
+        result.append(entry)
+    return result
+
+def oneOf(options):
     """
     Returns a random item from a passed list.
 
