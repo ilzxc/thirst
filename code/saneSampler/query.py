@@ -29,7 +29,6 @@ def getSamples(pitch, instrument, categories):
 		categories = [categories]
 	result = []
 	for category in categories:
-		print(category)
 		coll = SAMPLES[instrument][category]
 		indices = findPitches(pitch, coll['midi'])
 		for index in indices:

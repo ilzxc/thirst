@@ -4,6 +4,71 @@ from query import *
 
 _ms = lambda time, total: time * total * 1000.
 
+instruments = ['violin', 'viola', 'cello']
+
+autocat = {
+	'violin': [
+		'artificial-harmonic',
+        'artificial-harmonic-tremolo',
+        'col-legno-tratto',
+        'non-vibrato',
+        'ordinario',
+        'ordinario-to-sul-ponticello',
+        'ordinario-to-sul-tasto',
+        'ordinario-to-tremolo',
+        'sul-ponticello',
+        'sul-ponticello-to-ordinario',
+        'sul-ponticello-to-sul-tasto',
+        'sul-ponticello-tremolo',
+        'sul-tasto',
+        'sul-tasto-to-ordinario',
+        'sul-tasto-to-sul-ponticello',
+        'tremolo',
+        'tremolo-to-ordinario'
+	],
+	'viola': [
+		'artificial-harmonic',
+        'artificial-harmonic-tremolo',
+        'col-legno-tratto',
+        'non-vibrato',
+        'ordinario',
+        'ordinario-to-sul-ponticello',
+        'ordinario-to-sul-tasto',
+        'ordinario-to-tremolo',
+        'sul-ponticello',
+        'sul-ponticello-to-ordinario',
+        'sul-ponticello-to-sul-tasto',
+        'sul-ponticello-tremolo',
+        'sul-tasto',
+        'sul-tasto-to-ordinario',
+        'sul-tasto-to-sul-ponticello',
+        'sul-tasto-tremolo',
+        'tremolo',
+        'tremolo-to-ordinario'
+	],
+	'cello': [
+		'artificial-harmonic',
+        'artificial-harmonic-tremolo',
+        'col-legno-tratto',
+        'non-vibrato',
+        'ordinario',
+        'ordinario-to-sul-ponticello',
+        'ordinario-to-sul-tasto',
+        'ordinario-to-tremolo',
+        'sul-ponticello',
+        'sul-ponticello-to-ordinario',
+        'sul-ponticello-to-sul-tasto',
+        'sul-ponticello-tremolo',
+        'sul-tasto',
+        'sul-tasto-to-ordinario',
+        'sul-tasto-to-sul-ponticello',
+        'sul-tasto-tremolo',
+        'tremolo',
+        'tremolo-to-ordinario'
+
+	]
+}
+
 def amp_in_out(time):
 	"""
 	An AHD envelope.
@@ -104,42 +169,26 @@ def moans(pitch, time, instrument = None, categories = None):
 
 	Upon receipt, engine queues /samples & executes envelopes
 	"""
-
 	if instrument is None:
 		instrument = one(['violin', 'viola', 'cello'])
-
+	elif type(instrument) is list:
+		instrument = one(instrument)		
 	if categories is None:
-		cats = [
-			'artificial-harmonic',
-	        'artificial-harmonic-tremolo',
-	        'col-legno-tratto',
-	        'non-vibrato',
-	        'ordinario',
-	        'ordinario-to-sul-ponticello',
-	        'ordinario-to-sul-tasto',
-	        'ordinario-to-tremolo',
-	        'sul-ponticello',
-	        'sul-ponticello-to-ordinario',
-	        'sul-ponticello-to-sul-tasto',
-	        'sul-ponticello-tremolo',
-	        'sul-tasto',
-	        'sul-tasto-to-ordinario',
-	        'sul-tasto-to-sul-ponticello',
-	        'sul-tasto-tremolo',
-	        'tremolo',
-	        'tremolo-to-ordinario'
-		]
-		categories = one(cats)
+		categories = one(autocat[instrument])
+	elif type(categories) is list:
+		categories = one(categories)
 
 	query = one(getSamples(pitch, instrument, categories))
 	correct = pitch - query['midi']
 	sample = query['files']
 
+	oengine = o.message('/engine', 'moan')
 	osamp = o.message('/samples', sample)
-	ofilename = o.message('/filename/suffix', '_' + instrument + '_moan.wav')
+	ofilename = o.message('/suffix', '_' + instrument + '_moan.wav')
 	otime = o.message('/time', time)
 	opitch = o.message('/pitch', one([pitch_peak, pitch_unidir, pitch_cross])(time, correct))
 	oamps = o.message('/amp', one([amp_in_out, amp_in, amp_out])(time))
-	return o.bundle(messages = [osamp, otime, opitch, oamps])
+
+	return o.bundle(messages = [oengine, osamp, ofilename, otime, opitch, oamps])
 
 
