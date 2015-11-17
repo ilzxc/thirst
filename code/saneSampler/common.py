@@ -24,6 +24,7 @@ def lc(function, data):
 _ftom = lambda frequency: (12. / log(2.)) * log(frequency / 27.5) + 21.
 _mtof = lambda midi: pow(2, (midi - 69.) / 12.) * 440.
 _ratio = lambda factor: mtof(factor + 69.) / 440.
+_window = lambda half = 1.: half * (random() * 2. - 1.) 
 
 def ftom(frequency):
     return lc(_ftom, frequency)
@@ -33,6 +34,9 @@ def mtof(midi):
 
 def ratio(factor):
     return lc(_ratio, factor)
+
+def window(half):
+    return lc(_window, half)
 
 def frange(*args):
     """
@@ -127,6 +131,13 @@ def oneOf(options):
     index = int(random() * len(options))
     copy = options[:index] + options[index + 1:]
     return (options[index], copy)
+
+def one(options):
+    """
+    Similar to oneOf, but returns only the element.
+    """
+    if len(options) is 0: return None
+    return options[int(random() * len(options))]
 
 def grab(indices, array):
     """
