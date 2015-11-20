@@ -9,18 +9,12 @@ def findIndices(target, coll):
     return result
 
 def grabIndices(indices, coll):
-    result = []
-    for i in indices:
-        result.append(coll[i])
+    result = map(lambda i: coll[i], indices)
     return result
 
 def findPitches(pitch, coll):
-    diffs = []
-    for note in coll:
-        diffs.append(pitch - note)
-    absdiffs = []
-    for diff in diffs:
-        absdiffs.append(abs(diff))
+    diffs = map(lambda note: pitch - note, coll)
+    absdiffs = map(lambda diff: abs(diff), diffs)
     mindiff = min(absdiffs)
     return findIndices(mindiff, absdiffs)
 
@@ -38,3 +32,9 @@ def getSamples(pitch, instrument, categories):
             result.append(entry)
     return result
 
+def filterCategories(pitch, instrument, categories):
+    diffs = map(lambda category: min(map(lambda midi: 
+                abs(pitch - midi), SAMPLES[instrument][category]['midi'])), 
+            categories)
+    fit = filter(lambda d: abs(d[1]) < 7, collect(categories, diffs))
+    return map(lambda elem: elem[0], fit)

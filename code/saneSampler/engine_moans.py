@@ -65,7 +65,6 @@ autocat = {
         'sul-tasto-tremolo',
         'tremolo',
         'tremolo-to-ordinario'
-
     ]
 }
 
@@ -177,9 +176,10 @@ def moans(pitch, time, instrument = None, categories = None):
     elif type(instrument) is list:
         instrument = one(instrument)        
     if categories is None:
-        categories = one(autocat[instrument])
-    elif type(categories) is list:
-        categories = one(categories)
+        categories = autocat[instrument]
+
+    categories = filterCategories(pitch, instrument, categories)
+    if len(categories) is 0: return o.bundle()
 
     query = one(getSamples(pitch, instrument, categories))
     correct = pitch - query['midi']
