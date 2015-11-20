@@ -12,20 +12,26 @@
 #include <stdio.h>
 #include <random>
 
-class Random {
+class Random
+{
   public:
-    Random() : Random( 0.f, 16000.f ) { }
-    Random( float flow, float fhigh ): gen{ rd() }, fdist{ flow, fhigh }, udist{ 0., 1. } { }
+    Random() : Random( 0.f, 16000.f ) {}
+    Random( float flow, float fhigh )
+        : gen{rd()}, fdist{flow, fhigh}, udist{0., 1.}
+    {
+    }
     inline float randFreq() { return fdist( gen ); }
     inline float randAmp() { return udist( gen ); }
-    inline float randInt( int max ) {
-        std::uniform_int_distribution<> disI { 0, max };
+    inline float randInt( int max )
+    {
+        std::uniform_int_distribution<> disI{0, max};
         return disI( gen );
     }
-    inline void setBounds( float flow, float fhigh ) {
-        fdist = std::uniform_real_distribution<> { flow, fhigh };
+    inline void setBounds( float flow, float fhigh )
+    {
+        fdist = std::uniform_real_distribution<>{flow, fhigh};
     }
-    
+
   private:
     std::random_device rd;
     std::mt19937 gen;

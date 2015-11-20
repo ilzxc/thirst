@@ -118,10 +118,11 @@ def pitch_peak(time, correct):
 	the time requested.
 	"""
 	ms = lambda t: _ms(t, time)
-	trans = ratio(window(2.))
+	trans = ratio(window(2.) + correct)
+	origin = ratio(correct)
 	attack_time = random() * .75 + .2
 	decay_time = 1. - attack_time
-	dest = [1., trans, 1.]
+	dest = [origin, trans, origin]
 	times = [0., ms(attack_time), ms(decay_time)]
 	curves = [1.] + window([.75, .75])
 	return interleave(dest, times, curves)
@@ -133,7 +134,8 @@ def pitch_unidir(time, correct):
 	Starts at most 3 semitones away from the desired pitch.
 	"""
 	trans = ratio(window(3.) + correct)
-	return interleave([trans, 1.], [0., time * 1000], [1, window(.75)])
+	origin = ratio(correct)
+	return interleave([trans, origin], [0., time * 1000], [1, window(.75)])
 
 def pitch_cross(time, correct):
 	"""
@@ -152,7 +154,8 @@ def pitch_cross(time, correct):
 	first = _ts()
 	second = 1 - _ts() - first
 	decay = 1. - (first + second)
-	dest = [1.] + trans + [1.]
+	origin = ratio(correct)
+	dest = [origin] + trans + [origin]
 	times = [0., ms(first), ms(second), ms(decay)]
 	curves = [1.] + window([.75, .75, .75])
 	return interleave(dest, times, curves)

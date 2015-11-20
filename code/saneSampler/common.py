@@ -27,15 +27,29 @@ _ratio = lambda factor: mtof(factor + 69.) / 440.
 _window = lambda half = 1.: half * (random() * 2. - 1.) 
 
 def ftom(frequency):
+    """
+    Frequency to Midi Number
+    """
     return lc(_ftom, frequency)
 
 def mtof(midi):
+    """
+    Midi Float to Frequency
+    """
     return lc(_mtof, midi)
 
 def ratio(factor):
+    """
+    Helper function for determining transposition ratios.
+    Expects an argument as a midi float, returns the ratio for
+    equal tempered transposition
+    """
     return lc(_ratio, factor)
 
 def window(half):
+    """
+    Returns values between -argument & argument. 
+    """
     return lc(_window, half)
 
 def frange(*args):
@@ -124,8 +138,8 @@ def oneOf(options):
     """
     Returns a random item from a passed list.
 
-    In addition, randomize removes the item from the list,
-    and passes the list as a second argument. 
+    In addition, randomize removes the item from a copy of 
+    the list, and returns this (shorter) list as a second argument. 
     """
     if len(options) is 0: return (None, None)
     index = int(random() * len(options))

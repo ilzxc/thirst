@@ -15,13 +15,17 @@ from engine_moans import moans
 from time import sleep
 from thoughts2 import prefix
 
-chords = [
-	[2801.955811, 0.333805, 1088.253418, 0.998441, 3694.234619, 0.247559, 2019.767944, 1.000000, 1788.372559, 0.064024],
-	[3165.476318, 0.985535, 806.581726, 1.000000, 3732.806396, 0.473814, 2530.415039, 0.316540, 1375.920288, 0.808892],
-	[525.259705, 0.945358, 1136.167480, 0.362523, 2155.104980, 1.000000, 3452.213379, 0.184657, 3942.270508, 0.948462],
-	[732.088623, 1.000000, 1712.914551, 0.209545, 2018.184326, 0.560162, 2800.334229, 0.825774, 3825.981201, 0.162353],
-	[852.642944, 0.401350, 1227.326050, 1.000000, 1734.575073, 0.269507, 2073.365234, 0.937920, 2496.795410, 0.080503]
-]
+parse_line = lambda l: map(lambda x: float(x), l[l.find(',') + 1 : l.find(';')].split())
+
+lowest_notes = {
+	'oboe': 58,   # b-flat below middle C
+	'violin': 55, # g below middle C
+	'viola': 48,  # c below middle C
+	'cello': 36   # c below viola c
+}
+
+check = lambda note: filter(lambda key: lowest_notes[key] <= note, lowest_notes)
+intersect = lambda lhs, rhs: filter(lambda elem: elem in rhs, lhs)
 
 def prepareChord(chord):
     """
@@ -31,17 +35,26 @@ def prepareChord(chord):
     freqs, amps = split(chord)
     return collect(ftom(freqs), amps)
 
+chords = []
+
+for i in range(0, 30):
+	with open('../../solutions/Apeak' + str(i) + '.txt') as f:
+		for line in f.readlines():
+			chords.append(parse_line(line))
+
 for chord in chords:
 	notes = prepareChord(chord)
 	instruments = ['violin', 'viola', 'cello']
 
-	time = abs(window(4.)) + .3
+	time = abs(window(4.)) + 1.
 
 	bundles = []
 
-	while len(instruments) > 0:
-		instrument, instruments = oneOf(instruments)
+	while len(instruments) > 0 and len(notes) > 0:
 		note, notes = oneOf(notes)
+		possible_instruments = intersect(instruments, check(note))
+		instrument = one(possible_instruments)
+		instruments.remove(instrument)
 		voiceTime = window(time) * .2 + time
 
 		note_used = note[0]
@@ -53,10 +66,12 @@ for chord in chords:
 	file_prefix = prefix()
 	oprefix = o.message('/prefix', file_prefix)
 	result = o.bundle(messages = [oscore, oprefix])
-	f = open(file_prefix + '_score.txt', 'w')
-	f.write(str(result))
-	f.close()
+#	f = open('./scores/' + file_prefix + '_score.txt', 'w')
+#	f.write(str(result))
+#	f.close()
 	send(result)
+	print(result)
+	print('-----------------------------------------------------')
 	sleep(time + 4.)
 
 print("Finished...")
