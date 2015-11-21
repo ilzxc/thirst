@@ -28,7 +28,7 @@ def getSamples(pitch, instrument, categories):
     """
     Get a list of samples matching pitches from a set of categories.
     """
-    if type(categories) is not list:
+    if isinstance(categories, list):
         categories = [categories]
     result = []
     for category in categories:
@@ -45,6 +45,7 @@ def filterCategories(pitch, instrument, categories):
     """
     Returns new list of categories that contain desired pitch.
     """
-    diffs = [min([abs(pitch - midi) for midi in SAMPLES[instrument][category]['midi']]) for category in categories]
+    diffs = [min([abs(pitch - midi)
+                  for midi in SAMPLES[instrument][category]['midi']]) for category in categories]
     return [elem[0] for elem in collect(categories, diffs) if elem[1] < 7]
     
