@@ -49,7 +49,7 @@ for chord in chords:
     time = abs(window(4.)) + 1.
     note, notes = oneOf(notes)
     bundles = [perc(note[0], time, 'oboe')]
-    
+
     while len(instruments) > 0 and len(notes) > 0:
         note, notes = oneOf(notes)
         possible_instruments = intersect(instruments, check(note))
@@ -63,7 +63,8 @@ for chord in chords:
     oscore = o.message('/score', bundles)
     file_prefix = prefix()
     oprefix = o.message('/prefix', file_prefix)
-    result = o.bundle(messages = [oscore, oprefix])
+    otime = o.message('/time', time + 1.)
+    result = o.bundle(messages = [oscore, otime, oprefix])
     f = open('./scores/' + file_prefix + '_score.txt', 'w')
     f.write(str(result))
     f.close()
