@@ -3,7 +3,7 @@ Query docstring here
 """
 
 from common import collect
-from instruments import SAMPLES
+from instruments import *
 
 def findIndices(target, coll):
     """
@@ -28,7 +28,7 @@ def getSamples(pitch, instrument, categories):
     """
     Get a list of samples matching pitches from a set of categories.
     """
-    if isinstance(categories, list):
+    if not isinstance(categories, list):
         categories = [categories]
     result = []
     for category in categories:

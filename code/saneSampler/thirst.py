@@ -49,16 +49,15 @@ for chord in chords:
     time = abs(window(4.)) + 1.
     note, notes = oneOf(notes)
     bundles = [perc(note[0], time, 'oboe')]
+    
     while len(instruments) > 0 and len(notes) > 0:
         note, notes = oneOf(notes)
         possible_instruments = intersect(instruments, check(note))
         instrument = one(possible_instruments)
         instruments.remove(instrument)
         voiceTime = window(time) * .2 + time
-
         note_used = note[0]
         if one([0, 1]) is 0: note_used = round(note_used)
-
         bundles.append(moans(note_used, voiceTime, instrument))
 
     oscore = o.message('/score', bundles)
@@ -70,7 +69,7 @@ for chord in chords:
     f.close()
     send(result)
     print(result)
-    print('-----------------------------------------------------')
+    print('-' * 100)
     sleep(time + 4.)
 
 print("Finished...")
