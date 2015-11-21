@@ -1,6 +1,6 @@
-from common import *
-from odotsetup import *
-from query import *
+from common import split, interleave, random, one, ratio, window
+from odotsetup import o
+from query import filterCategories, getSamples
 
 _ms = lambda time, total: time * total * 1000.
 
@@ -159,27 +159,23 @@ def pitch_cross(time, correct):
     curves = [1.] + window([.75, .75, .75])
     return interleave(dest, times, curves)
 
-def moans(pitch, time, instrument = None, categories = None):
+def moans(pitch, time, instrument):
     """
     Engine Main.
 
     Returns an odot bundle for the moans engine. API:
+    /engine : "moan"
     /samples : (string) -- a sample to use
+    /suffix : (string) -- filename suffix
     /time : (float) -- total time in seconds
     /pitch : (list) -- curve~ list for transposition ratios
     /amp : (list) -- curve~ list for amplitude envelope
 
     Upon receipt, engine queues /samples & executes envelopes
-    """
-    if instrument is None:
-        instrument = one(['violin', 'viola', 'cello'])
-    elif type(instrument) is list:
-        instrument = one(instrument)        
-    if categories is None:
-        categories = autocat[instrument]
-
-    categories = filterCategories(pitch, instrument, categories)
-    if len(categories) is 0: return o.bundle()
+    """    
+    categories = filterCategories(pitch, instrument, autocat[instrument])
+    if len(categories) is 0: 
+        return o.bundle()
 
     query = one(getSamples(pitch, instrument, categories))
     correct = pitch - query['midi']
@@ -193,5 +189,3 @@ def moans(pitch, time, instrument = None, categories = None):
     oamps = o.message('/amp', one([amp_in_out, amp_in, amp_out])(time))
 
     return o.bundle(messages = [oengine, osamp, ofilename, otime, opitch, oamps])
-
-

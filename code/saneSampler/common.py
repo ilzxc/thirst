@@ -159,20 +159,3 @@ def grab(indices, array):
     result = []
     for index in indices: result.append(array[ind])
     return result
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

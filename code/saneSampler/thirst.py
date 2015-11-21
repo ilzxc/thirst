@@ -7,15 +7,16 @@
     Inputs: chord to be articulated;
     Outputs: a udp-bound odot bundle for different engines.
 """
-
 from common import *
 from odotsetup import *
 from udp import send
 from engine_moans import moans
+from engine_perc import perc
 from time import sleep
 from thoughts2 import prefix
 
-parse_line = lambda l: map(lambda x: float(x), l[l.find(',') + 1 : l.find(';')].split())
+#parse_line = lambda l: map(lambda x: float(x), l[l.find(',') + 1 : l.find(';')].split())
+parse_line = lambda l: [float(x) for x in l[l.find(',') + 1 : l.find(';')].split()]
 
 lowest_notes = {
     'oboe': 58,   # b-flat below middle C
@@ -45,11 +46,9 @@ for i in range(0, 30):
 for chord in chords:
     notes = prepareChord(chord)
     instruments = ['violin', 'viola', 'cello']
-
     time = abs(window(4.)) + 1.
-
-    bundles = []
-
+    note, notes = oneOf(notes)
+    bundles = [perc(note[0], time, 'oboe')]
     while len(instruments) > 0 and len(notes) > 0:
         note, notes = oneOf(notes)
         possible_instruments = intersect(instruments, check(note))
@@ -66,9 +65,9 @@ for chord in chords:
     file_prefix = prefix()
     oprefix = o.message('/prefix', file_prefix)
     result = o.bundle(messages = [oscore, oprefix])
-#   f = open('./scores/' + file_prefix + '_score.txt', 'w')
-#   f.write(str(result))
-#   f.close()
+    f = open('./scores/' + file_prefix + '_score.txt', 'w')
+    f.write(str(result))
+    f.close()
     send(result)
     print(result)
     print('-----------------------------------------------------')
