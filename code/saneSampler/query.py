@@ -3,7 +3,7 @@ Query docstring here
 """
 
 from common import collect
-from instruments import *
+from instruments import SAMPLES
 
 def findIndices(target, coll):
     """
@@ -19,7 +19,7 @@ def grabIndices(indices, coll):
 
 def findPitches(pitch, coll):
     """
-    Returns indices of matching pitches in the collection.
+    Returns indices of closest matching pitches in a collection.
     """
     absdiffs = [abs(pitch - note) for note in coll]
     return findIndices(min(absdiffs), absdiffs)
@@ -32,13 +32,9 @@ def getSamples(pitch, instrument, categories):
         categories = [categories]
     result = []
     for category in categories:
-        coll = SAMPLES[instrument][category]
-        indices = findPitches(pitch, coll['midi'])
-        for index in indices:
-            entry = {}
-            for subcat in coll:
-                entry[subcat] = coll[subcat][index]
-            result.append(entry)
+        result += [{subcat: SAMPLES[instrument][category][subcat][index]
+                    for subcat in SAMPLES[instrument][category]}
+                   for index in findPitches(pitch, SAMPLES[instrument][category]['midi'])]
     return result
 
 def filterCategories(pitch, instrument, categories):

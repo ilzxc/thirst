@@ -51,7 +51,7 @@ def perc(pitch, time, instrument):
     /engine : "perc"
     /samples: (string) -- a sample to use
     /suffix : (string) -- filename suffix
-    /tmie : (float) -- total time in seconds
+    /time : (float) -- total time in seconds
     /pitch : (float) -- transposition factor
     /amp : (list) -- line~ list for amplitude envelope
     """

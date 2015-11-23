@@ -13,7 +13,7 @@ from udp import send
 from engine_moans import moans
 from engine_perc import perc
 from time import sleep
-from thoughts2 import prefix
+#from thoughts2 import prefix
 
 #parse_line = lambda l: map(lambda x: float(x), l[l.find(',') + 1 : l.find(';')].split())
 parse_line = lambda l: [float(x) for x in l[l.find(',') + 1 : l.find(';')].split()]

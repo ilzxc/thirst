@@ -1,5 +1,6 @@
 from random import random
 from math import log
+from time import localtime, clock
 
 def lc(function, data):
     """
@@ -159,3 +160,12 @@ def grab(indices, array):
     result = []
     for index in indices: result.append(array[ind])
     return result
+
+# File Functions -----------------------------------------------------|
+
+def prefix():
+    t = localtime()
+    return "{0}{1}{2}{3}{4:.4f}".format(t.tm_mon, t.tm_mday,
+                                        t.tm_hour, t.tm_min,
+                                        t.tm_sec + clock())
+
