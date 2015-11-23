@@ -14,10 +14,7 @@ def lc(function, data):
     func(data): return lc(_func, data) <-- client-friendly function
     """
     if type(data) is list:
-        result = []
-        for datum in data:
-            result.append(function(datum))
-        return result
+        return [function(datum) for datum in data]
     return function(data)
 
 # Math Functions: ----------------------------------------------------|
@@ -78,7 +75,6 @@ def frange(*args):
         result.append(i)
         i += step
     return result
-
 
 # List Functions: ----------------------------------------------------|
 
@@ -157,9 +153,7 @@ def one(options):
 def grab(indices, array):
     """
     """
-    result = []
-    for index in indices: result.append(array[ind])
-    return result
+    return [array[index] for index in indices]
 
 # File Functions -----------------------------------------------------|
 

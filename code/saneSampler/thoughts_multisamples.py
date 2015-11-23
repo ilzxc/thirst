@@ -95,7 +95,7 @@ def rapids(chord, time, instrument):
     events = []
     for index, value in enumerate(fileindices):
         opitch = o.message('/pitch', correct[index])
-        obuffer = o.message('/buffer', 'rapids.' + instrument + '.' + str(value))
+        obuffer = o.message('/buffer', instrument + '.rapids.' + str(value))
         oeventtime = o.message('/event/time', event_times[index] + 0.02)
         events.append(o.bundle(messages = [opitch, obuffer, oeventtime]))
     oevents = o.message('/events', events)

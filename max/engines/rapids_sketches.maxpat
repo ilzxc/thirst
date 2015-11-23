@@ -135,7 +135,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "clear" ],
-					"patching_rect" : [ 352.0, 74.0, 49.0, 22.0 ],
+					"patching_rect" : [ 352.0, 74.0, 157.0, 22.0 ],
 					"style" : "",
 					"text" : "t l clear"
 				}
@@ -511,7 +511,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 352.0, 170.0, 136.0, 22.0 ],
+					"patching_rect" : [ 352.0, 175.0, 136.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -720,6 +720,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 499.5, 171.0, 361.5, 171.0 ],
 					"source" : [ "obj-43", 1 ]
 				}
 
