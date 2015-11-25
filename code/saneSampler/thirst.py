@@ -37,7 +37,7 @@ def prepareChord(chord):
 chords = []
 
 for i in range(0, 30):
-    with open('../../solutions/Apeak' + str(i) + '.txt') as f:
+    with open('../../solutions/5peak' + str(i) + '.txt') as f:
         for line in f.readlines():
             chords.append(parse_line(line))
 
