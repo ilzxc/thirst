@@ -17,13 +17,13 @@ def rapids_time(chord, time):
     notes in the chord.
     """
     bpm = random() * 40. + 60.
-    tuplet = len(chord)
+    tuplet = one([5, 6, 7, 4, 5, 6, 7])
     time_between_events = 60. / (bpm * tuplet)
     time_total = tuplet * time_between_events
     if time_total > time:
         time = time_total
     event_times = frange(0., time_total, time_between_events)
-    return (event_times, time)
+    return (time_between_events, time)
 
 def rapids(chord, time, instrument):
     """
@@ -65,7 +65,7 @@ def rapids(chord, time, instrument):
 
     # construct bundle:
     oengine = o.message('/engine', 'rapids')
-    oinstr = o.message('/insturment', instrument)
+    oinstr = o.message('/instrument', instrument)
     osamp = o.message('/samples', filenames)
     osuffix = o.message('/suffix', '_' + instrument + '_rapids.wav')
     otime = o.message('/time', time)
@@ -73,7 +73,7 @@ def rapids(chord, time, instrument):
     for index, value in enumerate(fileindices):
         opitch = o.message('/pitch', correct[index])
         obuffer = o.message('/buffer', instrument + '.rapids.' + str(value))
-        oeventtime = o.message('/event/time', event_times[index] + 0.02)
+        oeventtime = o.message('/event/time', event_times * index + 0.05)
         events.append(o.bundle(messages = [opitch, obuffer, oeventtime]))
     oevents = o.message('/events', events)
     return o.bundle(messages = [oengine, oinstr, osamp, osuffix, otime, oevents])
