@@ -8,22 +8,18 @@ instruments = ['oboe', 'violin', 'viola', 'cello']
 
 autocat = {
     'oboe': [
-        'staccato',
-        'sforzando'
+        'staccato'
     ],
     'violin': [
         'pizzicato-l-vib',
-        'sforzato',
         'staccato'
     ],
     'viola': [
         'pizzicato-l-vib',
-        'sforzato',
         'staccato'
     ],
     'cello': [
         'pizzicato-l-vib',
-        'sforzato',
         'staccato'
     ]
 }

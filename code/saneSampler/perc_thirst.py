@@ -10,7 +10,8 @@
 from common import *
 from odotsetup import *
 from udp import send
-from engine_reartic import reartic
+from engine_moans import moans
+from engine_perc import perc
 from time import sleep
 
 parse_line = lambda l: [float(x) for x in l[l.find(',') + 1 : l.find(';')].split()]
@@ -36,38 +37,35 @@ def prepareChord(chord):
 chords = []
 
 for i in range(0, 30):
-    with open('../../solutions/5peak' + str(i) + '.txt') as f:
+    with open('../../solutions/Apeak' + str(i) + '.txt') as f:
         for line in f.readlines():
             chords.append(parse_line(line))
 
 for chord in chords:
     notes = prepareChord(chord)
     instruments = ['oboe', 'violin', 'viola', 'cello']
-    time = abs(window(4.)) + 2.
-    note, notes = oneOf(notes)
+    time = 3.
+    bundles = []
 
     while len(instruments) > 0 and len(notes) > 0:
-        bundles = []
         note, notes = oneOf(notes)
         possible_instruments = intersect(instruments, check(note))
-        instrument = one(possible_instruments)
-        instruments.remove(instrument)
-        voiceTime = window(time) * .2 + time
+        instrument, instruments = oneOf(possible_instruments)
         note_used = note[0]
-        if one([0, 1]) is 0: 
-            note_used = round(note_used)
-        bundles.append(reartic(note_used, voiceTime, instrument))
-        oscore = o.message('/score', bundles)
-        file_prefix = prefix()
-        oprefix = o.message('/prefix', file_prefix)
-        otime = o.message('/time', time + 3.)
-        result = o.bundle(messages = [oscore, otime, oprefix])
-        f = open('./scores/' + file_prefix + '_score.txt', 'w')
-        f.write(str(result))
-        f.close()
-        send(result)
-        print(result)
-        print('-' * 100)
-        sleep(time * 2 + 3.)
+        if one(range(100)) > 10: note_used = round(note_used)
+        bundles.append(perc(note_used, time, instrument))
+
+    oscore = o.message('/score', bundles)
+    file_prefix = prefix()
+    oprefix = o.message('/prefix', file_prefix)
+    otime = o.message('/time', time + 1.)
+    result = o.bundle(messages = [oscore, otime, oprefix])
+    f = open('./scores/' + file_prefix + '_percscore.txt', 'w')
+    f.write(str(result))
+    f.close()
+    send(result)
+    print(result)
+    print('-' * 100)
+    sleep(time + 4.)
 
 print("Finished...")
