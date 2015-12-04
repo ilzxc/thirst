@@ -1,0 +1,31 @@
+/score : [{
+	/engine : "perc",
+	/samples : "Va-pizz-lv-D#5-pp-1c.aif",
+	/suffix : "_viola_perc.wav",
+	/time : 3.,
+	/pitch : 1.,
+	/amp : [0., 0., 0.867224, 20, 0.867224, 8960., 0., 20]
+}, {
+	/engine : "perc",
+	/samples : "Ob-stacc-G5-mf.aif",
+	/suffix : "_oboe_perc.wav",
+	/time : 3.,
+	/pitch : 0.916303,
+	/amp : [0., 0., 0.693524, 20, 0.693524, 8960., 0., 20]
+}, {
+	/engine : "perc",
+	/samples : "Vc-pizz-lv-E5-pp-1c.aif",
+	/suffix : "_cello_perc.wav",
+	/time : 3.,
+	/pitch : 1.41421,
+	/amp : [0., 0., 0.897506, 20, 0.897506, 8960., 0., 20]
+}, {
+	/engine : "perc",
+	/samples : "Vn-pizz-lv-A6-pp-1c.aif",
+	/suffix : "_violin_perc.wav",
+	/time : 3.,
+	/pitch : 1.,
+	/amp : [0., 0., 0.798877, 20, 0.798877, 8960., 0., 20]
+}],
+/time : 4.,
+/prefix : "1128174414.3080"

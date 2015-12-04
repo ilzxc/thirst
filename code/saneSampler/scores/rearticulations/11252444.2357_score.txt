@@ -1,0 +1,45 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "viola",
+	/samples : ["Va-nonvib-B6-ff-1c.aif", "Va-trem-B6-pp-1c.aif", "Va-ord_tasto-A6-mf-1c.aif", "Va-nonvib-B6-pp-1c.aif", "Va-art-harm-B6-mf-1c.aif", "Va-cre_dec-A6-ppmfpp-1c.aif", "Va-trem_ord-G#6-mf-1c.aif"],
+	/suffix : "_viola_reartic.wav",
+	/time : 3.49804,
+	/events : [{
+		/pitch : 1.15826,
+		/buffer : "viola.reartic.7",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.0548812, 30., 0.503589, 0.955752, 344.906, 0.559638, 0., 30., 0.]
+	}, {
+		/pitch : 1.09325,
+		/buffer : "viola.reartic.6",
+		/event/time : 0.454906,
+		/envelope : [0., 0., 1., 0.949919, 380.738, 0.190269, 0.949919, 44.9676, 1., 0., 114.17, 0.681551]
+	}, {
+		/pitch : 0.973976,
+		/buffer : "viola.reartic.1",
+		/event/time : 0.994782,
+		/envelope : [0., 0., 1., 0.974763, 288.35, -0.413911, 0.974763, 71.0633, 1., 0., 315.431, -0.594811]
+	}, {
+		/pitch : 0.973976,
+		/buffer : "viola.reartic.2",
+		/event/time : 1.66963,
+		/envelope : [0., 0., 0., 0.991936, 30., 0.351278, 0.14321, 74.9688, -0.551417, 0., 30., 0.]
+	}, {
+		/pitch : 0.973976,
+		/buffer : "viola.reartic.5",
+		/event/time : 1.80459,
+		/envelope : [0., 0., 1., 0.925402, 113.25, 0.468007, 0.925402, 10.7797, 1., 0., 280.877, 0.400741]
+	}, {
+		/pitch : 1.09325,
+		/buffer : "viola.reartic.3",
+		/event/time : 2.2095,
+		/envelope : [0., 0., 1., 0.985841, 312.608, -0.196784, 0.985841, 77.5388, 1., 0., 149.728, 0.32429]
+	}, {
+		/pitch : 0.973976,
+		/buffer : "viola.reartic.4",
+		/event/time : 2.74938,
+		/envelope : [0., 0., 0., 0., 798.665, 0.]
+	}]
+},
+/time : 6.21437,
+/prefix : "11252444.2357"

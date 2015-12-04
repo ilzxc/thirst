@@ -1,0 +1,60 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "cello",
+	/samples : ["Vc-art-harm-trem-E7-mf-1c.aif", "Vc-art-harm-E7-mf-1c.aif"],
+	/suffix : "_cello_reartic.wav",
+	/time : 5.04811,
+	/events : [{
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.878593, 30., -0.106834, 0.12215, 580.218, 0.315081, 0., 30., 0.]
+	}, {
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.1",
+		/event/time : 0.690218,
+		/envelope : [0., 128.044, 0.]
+	}, {
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.2",
+		/event/time : 0.818261,
+		/envelope : [0., 0., 1., 0.592974, 144.715, -0.2104, 0.592974, 48.5277, 1., 0., 190.887, -0.6894]
+	}, {
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.2",
+		/event/time : 1.20239,
+		/envelope : [0., 0., 1., 0.56632, 83.4966, 0.384682, 0.56632, 30.4006, 1., 0., 142.19, 0.725641]
+	}, {
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.1",
+		/event/time : 1.45848,
+		/envelope : [0., 256.087, 0.]
+	}, {
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.2",
+		/event/time : 1.71457,
+		/envelope : [0., 0., 0., 0.828914, 30., -0.660433, 0.105546, 324.131, -0.540514, 0., 30., 0.]
+	}, {
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.1",
+		/event/time : 2.0987,
+		/envelope : [0., 0., 0., 0.903429, 304.676, 0.524553, 0.883755, 189.522, 0.0147834, 0., 146.02, 0.]
+	}, {
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.2",
+		/event/time : 2.73891,
+		/envelope : [0., 0., 0., 0.54104, 38.6808, -0.480875, 0.543117, 158.999, 0.323664, 0.305977, 80.9083, 0.106757, 0.0303968, 194.62, -0.616436, 0.826845, 64.1563, -0.463848, 0., 871.114, 0.]
+	}, {
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.1",
+		/event/time : 4.14739,
+		/envelope : [0., 0., 0., 0.0766501, 30., -0.750871, 0.894536, 324.131, -0.744365, 0., 30., 0.]
+	}, {
+		/pitch : 1.09357,
+		/buffer : "cello.reartic.2",
+		/event/time : 4.53152,
+		/envelope : [0., 0., 0., 0.668471, 305.041, 0.134042, 0., 261.543, 0.]
+	}]
+},
+/time : 8.95205,
+/prefix : "112818344.9121"

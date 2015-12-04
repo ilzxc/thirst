@@ -1,0 +1,60 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "viola",
+	/samples : ["Va-ord_pont-D#4-mf-3c.aif", "Va-ord-D#4-mf-2c.aif", "Va-pont-trem-D#4-mf-4c.aif", "Va-nonvib-D#4-mf-2c.aif", "Va-pizz-lv-D#4-pp-3c.aif", "Va-tasto-D#4-mf-2c.aif", "Va-ord-D#4-pp-4c.aif", "Va-nonvib-D#4-pp-2c.aif", "Va-pizz-lv-D#4-mf-2c.aif", "Va-pont-D#4-mf-3c.aif"],
+	/suffix : "_viola_reartic.wav",
+	/time : 4.20259,
+	/events : [{
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.4",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.634812, 160.177, 0.490301, 0.634812, 99.0272, 1., 0., 281.874, -0.395239]
+	}, {
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.5",
+		/event/time : 0.591078,
+		/envelope : [0., 0., 0., 0.0860496, 30., -0.756703, 0.893232, 481.078, 0.614975, 0., 30., 0.]
+	}, {
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.6",
+		/event/time : 1.13216,
+		/envelope : [0., 0., 0., 0., 405.808, 0.]
+	}, {
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.1",
+		/event/time : 1.53796,
+		/envelope : [0., 0., 1., 0.525898, 35.2035, -0.451085, 0.525898, 23.5725, 1., 0., 76.4935, 0.124306]
+	}, {
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.3",
+		/event/time : 1.67323,
+		/envelope : [0., 0., 0., 0.457657, 35.9491, -0.168711, 0.123697, 299.964, 0.0638544, 0., 475.704, 0.]
+	}, {
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.9",
+		/event/time : 2.48485,
+		/envelope : [0., 0., 1., 0.667074, 65.4196, -0.342766, 0.667074, 14.6277, 1., 0., 190.492, 0.120378]
+	}, {
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.8",
+		/event/time : 2.75539,
+		/envelope : [0., 0., 1., 0.981092, 190.752, -0.240872, 0.981092, 49.614, 1., 0., 30.173, -0.132034]
+	}, {
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.2",
+		/event/time : 3.02593,
+		/envelope : [0., 135.269, 0.]
+	}, {
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.7",
+		/event/time : 3.1612,
+		/envelope : [0., 0., 0., 0.126459, 30., 0.541268, 0.982889, 1022.16, 0.536564, 0., 30., 0.]
+	}, {
+		/pitch : 1.02718,
+		/buffer : "viola.reartic.10",
+		/event/time : 4.24335,
+		/envelope : [0., 9.23942, 0.]
+	}]
+},
+/time : 7.57211,
+/prefix : "11252751.0835"

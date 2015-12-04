@@ -1,0 +1,26 @@
+/score : [{
+	/engine : "perc",
+	/samples : "Va-stacc-A6-mf-1c.aif",
+	/suffix : "_viola_perc.wav",
+	/time : 3.,
+	/pitch : 1.,
+	/amp : [0., 0., 0.573652, 20, 0.573652, 8960., 0., 20]
+}, {
+	/engine : "perc",
+	/samples : "Ob-stacc-G6-mf.aif",
+	/suffix : "_oboe_perc.wav",
+	/time : 3.,
+	/pitch : 1.41421,
+	/amp : [0., 0., 0.630361, 20, 0.630361, 8960., 0., 20]
+}, {
+	/engine : "perc",
+	/samples : "Vn-stacc-G#5-mf-1c.aif",
+	/suffix : "_violin_perc.wav",
+	/time : 3.,
+	/pitch : 0.943874,
+	/amp : [0., 0., 0.612021, 20, 0.612021, 8960., 0., 20]
+}, {
+
+}],
+/time : 4.,
+/prefix : "1128173137.1066"

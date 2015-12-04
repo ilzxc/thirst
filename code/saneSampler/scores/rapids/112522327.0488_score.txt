@@ -1,0 +1,62 @@
+/score : {
+	/engine : "rapids",
+	/instrument : "oboe",
+	/samples : ["Ob-stacc-D#5-mf.aif", "Ob-stacc-G4-mf.aif", "Ob-stacc-D#4-mf.aif", "Ob-stacc-D#6-mf.aif", "Ob-stacc-G6-mf.aif"],
+	/suffix : "_oboe_rapids.wav",
+	/time : 3.,
+	/events : [{
+		/pitch : 0.968528,
+		/buffer : "oboe.rapids.1",
+		/event/time : 0.05
+	}, {
+		/pitch : 1.08094,
+		/buffer : "oboe.rapids.2",
+		/event/time : 0.174722
+	}, {
+		/pitch : 1.08094,
+		/buffer : "oboe.rapids.2",
+		/event/time : 0.299444
+	}, {
+		/pitch : 1.08094,
+		/buffer : "oboe.rapids.2",
+		/event/time : 0.424166
+	}, {
+		/pitch : 1.08094,
+		/buffer : "oboe.rapids.2",
+		/event/time : 0.548888
+	}, {
+		/pitch : 0.921565,
+		/buffer : "oboe.rapids.5",
+		/event/time : 0.67361
+	}, {
+		/pitch : 1.04905,
+		/buffer : "oboe.rapids.5",
+		/event/time : 0.798332
+	}, {
+		/pitch : 0.964284,
+		/buffer : "oboe.rapids.4",
+		/event/time : 0.923054
+	}, {
+		/pitch : 0.964284,
+		/buffer : "oboe.rapids.4",
+		/event/time : 1.04778
+	}, {
+		/pitch : 0.964284,
+		/buffer : "oboe.rapids.4",
+		/event/time : 1.1725
+	}, {
+		/pitch : 0.964284,
+		/buffer : "oboe.rapids.4",
+		/event/time : 1.29722
+	}, {
+		/pitch : 1.35379,
+		/buffer : "oboe.rapids.5",
+		/event/time : 1.42194
+	}, {
+		/pitch : 0.999477,
+		/buffer : "oboe.rapids.3",
+		/event/time : 1.54666
+	}]
+},
+/time : 4.,
+/prefix : "112522327.0488"

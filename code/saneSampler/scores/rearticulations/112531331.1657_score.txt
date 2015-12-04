@@ -1,0 +1,55 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "violin",
+	/samples : ["Vn-tasto-C6-mf-1c.aif", "Vn-crush_ord-C6-mf-1c.aif", "Vn-ord-C6-pp-2c.aif", "Vn-trem_ord-B5-mf-1c.aif", "Vn-pont-trem-C6-mf-1c.aif", "Vn-nonvib-C6-mf-2c.aif", "Vn-sfz-B5-f-1c.aif", "Vn-stacc-C6-mf-1c.aif"],
+	/suffix : "_violin_reartic.wav",
+	/time : 5.68266,
+	/events : [{
+		/pitch : 1.05946,
+		/buffer : "violin.reartic.7",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.544217, 373.678, 0.232923, 0.544217, 21.0103, 1., 0., 226.592, -0.473549]
+	}, {
+		/pitch : 1.05946,
+		/buffer : "violin.reartic.4",
+		/event/time : 0.67128,
+		/envelope : [0., 0., 0., 0.0910829, 30., -0.200486, 0.943384, 64.256, 0.814007, 0., 30., 0.]
+	}, {
+		/pitch : 1.05946,
+		/buffer : "violin.reartic.4",
+		/event/time : 0.795536,
+		/envelope : [0., 0., 0., 0.936786, 30., 0.129703, 0.105542, 1058.3, 0.415527, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.2",
+		/event/time : 1.91384,
+		/envelope : [0., 0., 1., 0.513606, 212.263, 0.0417949, 0.513606, 46.1456, 1., 0., 238.615, 0.476117]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.1",
+		/event/time : 2.41086,
+		/envelope : [0., 0., 1., 0.900239, 69.9189, 0.617225, 0.900239, 2.72345, 1., 0., 51.6136, 0.197705]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.8",
+		/event/time : 2.53512,
+		/envelope : [0., 0., 1., 0.892105, 370.479, -0.118255, 0.892105, 229.901, 1., 0., 642.179, 0.435988]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.5",
+		/event/time : 3.77768,
+		/envelope : [0., 0., 0., 0.966697, 30., -0.302104, 0.104764, 561.28, 0.311496, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.3",
+		/event/time : 4.39896,
+		/envelope : [0., 0., 0., 0.148707, 30., -0.688942, 0.755576, 64.256, 0.466747, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.6",
+		/event/time : 4.52322,
+		/envelope : [0., 0., 0., 0.237949, 142.107, -0.0174732, 0.894864, 135.324, 0.547499, 0.465756, 101.795, -0.431296, 0., 830.219, 0.]
+	}]
+},
+/time : 7.78251,
+/prefix : "112531331.1657"

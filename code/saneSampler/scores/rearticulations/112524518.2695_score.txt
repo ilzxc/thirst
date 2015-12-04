@@ -1,0 +1,20 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "oboe",
+	/samples : ["Ob-flatt-A#3-mf.aif", "Ob-cresc-C#4-ppff.aif"],
+	/suffix : "_oboe_reartic.wav",
+	/time : 2.11617,
+	/events : [{
+		/pitch : 0.89691,
+		/buffer : "oboe.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.792986, 948.344, -0.123688, 0.792986, 216.012, 1., 0., 198.107, -0.226116]
+	}, {
+		/pitch : 0.754209,
+		/buffer : "oboe.reartic.2",
+		/event/time : 1.41246,
+		/envelope : [0., 0., 1., 0.526915, 487.841, 0.695987, 0.526915, 119.515, 1., 0., 146.355, 0.145662]
+	}]
+},
+/time : 5.22268,
+/prefix : "112524518.2695"

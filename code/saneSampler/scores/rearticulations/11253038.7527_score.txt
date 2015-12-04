@@ -1,0 +1,60 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "violin",
+	/samples : ["Vn-art-harm-G7-mf-2c.aif", "Vn-art-harm-trem-G7-mf-2c.aif", "Vn-art-harm-G7-mf-1c.aif", "Vn-ord-E7-mf-1c.aif", "Vn-ord-E7-ff-1c.aif", "Vn-trem-E7-mf-1c.aif", "Vn-art-harm-trem-G7-mf-1c.aif", "Vn-trem-E7-pp-1c.aif"],
+	/suffix : "_violin_reartic.wav",
+	/time : 5.90723,
+	/events : [{
+		/pitch : 1.,
+		/buffer : "violin.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.84343, 117.098, -0.522014, 0.84343, 26.792, 1., 0., 92.4202, -0.28111]
+	}, {
+		/pitch : 1.18921,
+		/buffer : "violin.reartic.5",
+		/event/time : 0.28631,
+		/envelope : [0., 0., 0., 0.961405, 30., -0.739952, 0.146941, 176.31, 0.211186, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.2",
+		/event/time : 0.522621,
+		/envelope : [0., 0., 1., 0.55462, 58.9238, -0.671009, 0.55462, 15.2952, 1., 0., 43.9362, 0.505286]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.7",
+		/event/time : 0.640776,
+		/envelope : [0., 0., 0., 0.0457636, 80.4093, 0.478183, 0., 510.367, 0.]
+	}, {
+		/pitch : 1.18921,
+		/buffer : "violin.reartic.8",
+		/event/time : 1.23155,
+		/envelope : [0., 0., 0., 0.98096, 59.558, 0.597506, 0., 531.218, 0.]
+	}, {
+		/pitch : 1.18921,
+		/buffer : "violin.reartic.6",
+		/event/time : 1.82233,
+		/envelope : [0., 0., 1., 0.641743, 117.249, 0.641459, 0.641743, 4.04565, 1., 0., 115.016, 0.375132]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.2",
+		/event/time : 2.05864,
+		/envelope : [0., 0., 1., 0.842329, 758.639, -0.474827, 0.842329, 43.5969, 1., 0., 497.472, 0.288428]
+	}, {
+		/pitch : 1.18921,
+		/buffer : "violin.reartic.4",
+		/event/time : 3.35835,
+		/envelope : [0., 0., 1., 0.808414, 333.906, 0.685934, 0.808414, 55.1208, 1., 0., 674.37, 0.533233]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.3",
+		/event/time : 4.42174,
+		/envelope : [0., 0., 0., 0.0562678, 30., 0.553669, 0.784119, 1003.4, 0.451248, 0., 30., 0.]
+	}, {
+		/pitch : 1.18921,
+		/buffer : "violin.reartic.6",
+		/event/time : 5.48514,
+		/envelope : [0., 0., 0., 0.0726278, 30., -0.391617, 0.916174, 412.09, 0.0422315, 0., 30., 0.]
+	}]
+},
+/time : 8.07146,
+/prefix : "11253038.7527"

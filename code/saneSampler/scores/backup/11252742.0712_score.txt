@@ -1,0 +1,60 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "viola",
+	/samples : ["Va-trem-C#6-pp-1c.aif", "Va-trem_ord-C6-mf-1c.aif", "Va-pont-trem-C#6-mf-2c.aif", "Va-cre_dec-C#6-ppmfpp-1c.aif", "Va-sfz-D6-fp-1c.aif", "Va-nonvib-C#6-mf-2c.aif", "Va-pont_tasto-D6-mf-1c.aif", "Va-tasto-trem-C#6-mf-1c.aif", "Va-nonvib-C#6-ff-1c.aif", "Va-ord_trem-D#6-mf-1c.aif"],
+	/suffix : "_viola_reartic.wav",
+	/time : 4.95632,
+	/events : [{
+		/pitch : 1.00535,
+		/buffer : "viola.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.699339, 345.978, -0.199174, 0.699339, 82.6465, 1., 0., 50.2947, -0.680855]
+	}, {
+		/pitch : 0.948924,
+		/buffer : "viola.reartic.5",
+		/event/time : 0.528919,
+		/envelope : [0., 0., 0., 0., 359.189, 0.]
+	}, {
+		/pitch : 0.948924,
+		/buffer : "viola.reartic.7",
+		/event/time : 0.888108,
+		/envelope : [0., 0., 0., 0.0937067, 30., -0.207494, 0.908256, 538.649, 0.206284, 0., 30., 0.]
+	}, {
+		/pitch : 0.895665,
+		/buffer : "viola.reartic.10",
+		/event/time : 1.48676,
+		/envelope : [0., 0., 1., 0.857879, 702.715, -0.617503, 0.857879, 211.46, 1., 0., 163.392, 0.614402]
+	}, {
+		/pitch : 1.00535,
+		/buffer : "viola.reartic.9",
+		/event/time : 2.56432,
+		/envelope : [0., 0., 1., 0.607081, 61.2913, -0.0183552, 0.607081, 10.5697, 1., 0., 47.8688, -0.644776]
+	}, {
+		/pitch : 1.00535,
+		/buffer : "viola.reartic.4",
+		/event/time : 2.68405,
+		/envelope : [0., 0., 0., 0., 359.189, 0.]
+	}, {
+		/pitch : 1.00535,
+		/buffer : "viola.reartic.8",
+		/event/time : 3.04324,
+		/envelope : [0., 0., 1., 0.959295, 156.966, 0.248943, 0.959295, 96.2675, 1., 0., 345.416, 0.718769]
+	}, {
+		/pitch : 1.00535,
+		/buffer : "viola.reartic.6",
+		/event/time : 3.64189,
+		/envelope : [0., 0., 0., 0.407361, 278.843, -0.413971, 0., 918.454, 0.]
+	}, {
+		/pitch : 1.06513,
+		/buffer : "viola.reartic.2",
+		/event/time : 4.83919,
+		/envelope : [0., 0., 0., 0.963417, 30., 0.821791, 0.126308, 59.7298, 0.0333879, 0., 30., 0.]
+	}, {
+		/pitch : 1.00535,
+		/buffer : "viola.reartic.3",
+		/event/time : 4.95892,
+		/envelope : [0., 0., 1., 0.802069, 30.4733, 0.666191, 0.802069, 7.68572, 1., 0., 9.24497, -0.703974]
+	}]
+},
+/time : 7.77271,
+/prefix : "11252742.0712"

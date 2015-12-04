@@ -1,0 +1,65 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "cello",
+	/samples : ["Vc-art-harm-trem-E7-mf-1c.aif", "Vc-art-harm-E7-mf-1c.aif"],
+	/suffix : "_cello_reartic.wav",
+	/time : 6.39281,
+	/events : [{
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.2",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0., 714.04, 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.1",
+		/event/time : 0.76404,
+		/envelope : [0., 0., 0., 0.969322, 30., -0.789333, 0.0575386, 773.047, 0.128998, 0., 30., 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.2",
+		/event/time : 1.59709,
+		/envelope : [0., 0., 0., 0.0633448, 30., -0.690522, 0.870825, 59.0067, -0.82646, 0., 30., 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.2",
+		/event/time : 1.71609,
+		/envelope : [0., 0., 0., 0.765118, 218.8, -0.448436, 0.0136708, 301.551, -0.684884, 0.682476, 1.34786, 0.122822, 0., 787.374, 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.1",
+		/event/time : 3.02517,
+		/envelope : [0., 0., 0., 0.0687131, 30., -0.267476, 0.788518, 297.02, -0.282819, 0., 30., 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.1",
+		/event/time : 3.38219,
+		/envelope : [0., 0., 0., 0.228024, 59.9159, 0.363367, 0.944975, 173.483, -0.625028, 0., 480.641, 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.1",
+		/event/time : 4.09623,
+		/envelope : [0., 0., 0., 0., 714.04, 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.2",
+		/event/time : 4.81027,
+		/envelope : [0., 0., 1., 0.588639, 328.381, -0.216702, 0.588639, 109.49, 1., 0., 276.169, 0.0168866]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.2",
+		/event/time : 5.52431,
+		/envelope : [0., 0., 0., 0.590314, 217.783, 0.12246, 0., 377.251, 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.1",
+		/event/time : 6.11934,
+		/envelope : [0., 238.013, 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "cello.reartic.2",
+		/event/time : 6.35735,
+		/envelope : [0., 85.4598, 0.]
+	}]
+},
+/time : 8.9698,
+/prefix : "112818371.0179"

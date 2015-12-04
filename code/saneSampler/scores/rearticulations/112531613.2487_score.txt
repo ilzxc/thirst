@@ -1,0 +1,25 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "cello",
+	/samples : ["Vc-art-harm-trem-D#7-mf-1c.aif", "Vc-art-harm-D#7-mf-1c.aif"],
+	/suffix : "_cello_reartic.wav",
+	/time : 2.41353,
+	/events : [{
+		/pitch : 1.,
+		/buffer : "cello.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.796778, 104.053, -0.472503, 0.796778, 32.8674, 1., 0., 130.683, -0.596637]
+	}, {
+		/pitch : 1.,
+		/buffer : "cello.reartic.1",
+		/event/time : 0.317603,
+		/envelope : [0., 0., 0., 0.778975, 113.677, -0.171493, 0.554193, 76.4482, -0.434349, 0.37545, 31.9097, 0.414742, 0.72455, 61.3067, 0.313586, 0., 1188.48, 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "cello.reartic.2",
+		/event/time : 1.78942,
+		/envelope : [0., 0., 0., 0.413098, 244.52, 0.498901, 0.913897, 156.778, 0.186951, 0., 272.811, 0.]
+	}]
+},
+/time : 5.52908,
+/prefix : "112531613.2487"

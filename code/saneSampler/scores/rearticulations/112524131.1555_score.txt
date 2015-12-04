@@ -1,0 +1,10 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "oboe",
+	/samples,
+	/suffix : "_oboe_reartic.wav",
+	/time : 4.65174,
+	/events
+},
+/time : 7.33515,
+/prefix : "112524131.1555"

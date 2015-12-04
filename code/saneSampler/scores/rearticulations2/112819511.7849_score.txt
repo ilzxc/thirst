@@ -1,0 +1,30 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "violin",
+	/samples : ["Vn-trem-B5-mf-3c.aif", "Vn-trem-B5-pp-3c.aif", "Vn-ord-B5-pp-2c.aif", "Vn-cresc-A#5-ppff-1c.aif"],
+	/suffix : "_violin_reartic.wav",
+	/time : 2.55468,
+	/events : [{
+		/pitch : 1.,
+		/buffer : "violin.reartic.2",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.120294, 30., -0.613284, 0.829089, 326.934, -0.806389, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.1",
+		/event/time : 0.436934,
+		/envelope : [0., 0., 1., 0.534205, 178.776, 0.0228288, 0.534205, 22.3471, 1., 0., 185.811, -0.313916]
+	}, {
+		/pitch : 1.,
+		/buffer : "violin.reartic.3",
+		/event/time : 0.823868,
+		/envelope : [0., 0., 1., 0.763173, 161.144, 0.494002, 0.763173, 148.347, 1., 0., 464.378, 0.508317]
+	}, {
+		/pitch : 1.05946,
+		/buffer : "violin.reartic.4",
+		/event/time : 1.59774,
+		/envelope : [0., 0., 0., 0.686815, 280.069, -0.557763, 0.783866, 56.6252, -0.453787, 0., 670.247, 0.]
+	}]
+},
+/time : 5.34419,
+/prefix : "112819511.7849"

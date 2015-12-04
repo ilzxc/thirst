@@ -1,0 +1,55 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "violin",
+	/samples : ["Vn-pont-trem-G6-mf-1c.aif", "Vn-art-harm-trem-D7-mf-3c.aif", "Vn-trem-D7-ff-1c.aif", "Vn-legno-tratto-C7-mf-1c.aif", "Vn-trem-D7-mf-1c.aif", "Vn-stacc-C7-mf-1c.aif", "Vn-crush_ord-B6-mf-1c.aif", "Vn-nonvib-C7-ff-1c.aif"],
+	/suffix : "_violin_reartic.wav",
+	/time : 4.26618,
+	/events : [{
+		/pitch : 1.17984,
+		/buffer : "violin.reartic.7",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0., 507.52, 0.]
+	}, {
+		/pitch : 1.11362,
+		/buffer : "violin.reartic.6",
+		/event/time : 0.55752,
+		/envelope : [0., 0., 1., 0.667335, 264.761, -0.494841, 0.667335, 38.1695, 1., 0., 331.469, -0.0981531]
+	}, {
+		/pitch : 0.992126,
+		/buffer : "violin.reartic.2",
+		/event/time : 1.19192,
+		/envelope : [0., 0., 0., 0.141132, 49.0268, 0.352356, 0.342062, 301.774, -0.485795, 0., 283.599, 0.]
+	}, {
+		/pitch : 0.992126,
+		/buffer : "violin.reartic.5",
+		/event/time : 1.82632,
+		/envelope : [0., 0., 0., 0.361015, 216.854, 0.213827, 0.625483, 69.5882, 0.249346, 0., 982.356, 0.]
+	}, {
+		/pitch : 1.48651,
+		/buffer : "violin.reartic.1",
+		/event/time : 3.09512,
+		/envelope : [0., 0., 1., 0.753078, 80.8174, -0.0730871, 0.753078, 8.29624, 1., 0., 37.7662, -0.481779]
+	}, {
+		/pitch : 1.11362,
+		/buffer : "violin.reartic.4",
+		/event/time : 3.222,
+		/envelope : [0., 0., 1., 0.934911, 85.2682, -0.420018, 0.934911, 8.76704, 1., 0., 32.8446, -0.748547]
+	}, {
+		/pitch : 1.48651,
+		/buffer : "violin.reartic.1",
+		/event/time : 3.34888,
+		/envelope : [0., 0., 0., 0.148, 30., -0.176383, 0.809676, 320.64, -0.0148131, 0., 30., 0.]
+	}, {
+		/pitch : 1.11362,
+		/buffer : "violin.reartic.8",
+		/event/time : 3.72952,
+		/envelope : [0., 0., 0., 0.0564795, 30., -0.542134, 0.946743, 447.52, -0.54052, 0., 30., 0.]
+	}, {
+		/pitch : 0.992126,
+		/buffer : "violin.reartic.3",
+		/event/time : 4.23704,
+		/envelope : [0., 0., 0., 0.142309, 30., -0.496743, 0.929189, 19.1393, -0.20476, 0., 30., 0.]
+	}]
+},
+/time : 6.85593,
+/prefix : "11252494.3852"

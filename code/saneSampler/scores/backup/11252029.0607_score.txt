@@ -1,0 +1,30 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "viola",
+	/samples : ["Va-tasto-E5-mf-2c.aif", "Va-ord-E5-ff-2c.aif", "Va-ord-E5-pp-2c.aif", "Va-ord_pont-F5-mf-1c.aif"],
+	/suffix : "_viola_reartic.wav",
+	/time : 2.75102,
+	/events : [{
+		/pitch : 0.984088,
+		/buffer : "viola.reartic.2",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.137636, 30., 0.526285, 0.924247, 59.472, 0.466445, 0., 30., 0.]
+	}, {
+		/pitch : 0.984088,
+		/buffer : "viola.reartic.3",
+		/event/time : 0.169472,
+		/envelope : [0., 0., 1., 0.610044, 217.92, 0.199919, 0.610044, 8.08076, 1., 0., 610.303, -0.231649]
+	}, {
+		/pitch : 0.928855,
+		/buffer : "viola.reartic.4",
+		/event/time : 1.00578,
+		/envelope : [0., 0., 1., 0.94481, 682.29, -0.450009, 0.94481, 76.0954, 1., 0., 436.334, 0.531935]
+	}, {
+		/pitch : 0.984088,
+		/buffer : "viola.reartic.1",
+		/event/time : 2.2005,
+		/envelope : [0., 0., 0., 0.824101, 457.829, -0.0772504, 0., 142.693, 0.]
+	}]
+},
+/time : 4.30303,
+/prefix : "11252029.0607"

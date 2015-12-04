@@ -1,0 +1,65 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "cello",
+	/samples : ["Vc-art-harm-trem-E7-mf-1c.aif", "Vc-art-harm-E7-mf-1c.aif"],
+	/suffix : "_cello_reartic.wav",
+	/time : 5.5189,
+	/events : [{
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.2",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.828331, 664.419, -0.154585, 0.828331, 166.071, 1., 0., 78.9434, -0.283169]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.2",
+		/event/time : 0.959433,
+		/envelope : [0., 129.919, 0.]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.1",
+		/event/time : 1.08935,
+		/envelope : [0., 0., 0., 0.129315, 30., 0.256117, 0.898266, 199.838, 0.438478, 0., 30., 0.]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.1",
+		/event/time : 1.34919,
+		/envelope : [0., 0., 0., 0.98797, 30., 0.395207, 0.132564, 199.838, 0.537689, 0., 30., 0.]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.1",
+		/event/time : 1.60903,
+		/envelope : [0., 0., 0., 0.0557471, 30., -0.261776, 0.850765, 329.757, 0.739063, 0., 30., 0.]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.1",
+		/event/time : 1.99879,
+		/envelope : [0., 0., 1., 0.802337, 534.03, 0.690646, 0.802337, 230.848, 1., 0., 534.312, -0.298836]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.1",
+		/event/time : 3.29798,
+		/envelope : [0., 0., 0., 0.0832089, 30., 0.118602, 0.7573, 199.838, 0.210608, 0., 30., 0.]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.2",
+		/event/time : 3.55781,
+		/envelope : [0., 0., 1., 0.587697, 448.335, -0.43961, 0.587697, 30.6286, 1., 0., 430.47, -0.159011]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.2",
+		/event/time : 4.46725,
+		/envelope : [0., 0., 1., 0.938477, 166.015, -0.403685, 0.938477, 3.90297, 1., 0., 219.839, -0.582442]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.2",
+		/event/time : 4.857,
+		/envelope : [0., 0., 1., 0.95312, 89.6132, -0.284869, 0.95312, 25.3309, 1., 0., 144.894, 0.665742]
+	}, {
+		/pitch : 1.48278,
+		/buffer : "cello.reartic.1",
+		/event/time : 5.11684,
+		/envelope : [0., 0., 1., 0.628961, 143.917, -0.272429, 0.628961, 42.4302, 1., 0., 265.71, 0.693736]
+	}]
+},
+/time : 8.24818,
+/prefix : "11252378.0394"

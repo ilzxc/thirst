@@ -1,0 +1,50 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "cello",
+	/samples : ["Vc-trem-E4-ff-1c.aif", "Vc-ord_pont-F4-mf-1c.aif", "Vc-pizz-lv-E4-pp-1c.aif", "Vc-pont-E4-mf-2c.aif", "Vc-tasto-trem-E4-mf-2c.aif", "Vc-tasto_ord-E4-mf-1c.aif", "Vc-pizz-lv-E4-mf-1c.aif", "Vc-ord-E4-ff-2c.aif"],
+	/suffix : "_cello_reartic.wav",
+	/time : 6.95666,
+	/events : [{
+		/pitch : 1.02255,
+		/buffer : "cello.reartic.7",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.933309, 30., -0.80389, 0.0579066, 571.158, 0.447237, 0., 30., 0.]
+	}, {
+		/pitch : 0.965157,
+		/buffer : "cello.reartic.2",
+		/event/time : 0.681158,
+		/envelope : [0., 0., 0., 0.1398, 30., -0.684669, 0.839006, 1328.55, -0.105862, 0., 30., 0.]
+	}, {
+		/pitch : 1.02255,
+		/buffer : "cello.reartic.4",
+		/event/time : 2.06971,
+		/envelope : [0., 0., 0., 0.117262, 30., -0.382904, 0.870408, 1328.55, 0.697706, 0., 30., 0.]
+	}, {
+		/pitch : 1.02255,
+		/buffer : "cello.reartic.1",
+		/event/time : 3.45825,
+		/envelope : [0., 0., 1., 0.502962, 765.765, -0.436059, 0.502962, 13.8676, 1., 0., 608.915, -0.429505]
+	}, {
+		/pitch : 1.02255,
+		/buffer : "cello.reartic.8",
+		/event/time : 4.8468,
+		/envelope : [0., 0., 1., 0.851241, 169.958, 0.339274, 0.851241, 57.8958, 1., 0., 403.304, 0.744658]
+	}, {
+		/pitch : 1.02255,
+		/buffer : "cello.reartic.5",
+		/event/time : 5.47796,
+		/envelope : [0., 0., 0., 0.305723, 48.5788, -0.194646, 0.739032, 66.8299, 0.179113, 0.00491858, 173.375, 0.635447, 0.688298, 118.075, -0.413259, 0.0895113, 108.576, -0.158425, 0., 746.883, 0.]
+	}, {
+		/pitch : 1.02255,
+		/buffer : "cello.reartic.3",
+		/event/time : 6.74028,
+		/envelope : [0., 126.232, 0.]
+	}, {
+		/pitch : 1.02255,
+		/buffer : "cello.reartic.6",
+		/event/time : 6.86651,
+		/envelope : [0., 0., 1., 0.6485, 83.3683, 0.114179, 0.6485, 12.9797, 1., 0., 43.8048, -0.501158]
+	}]
+},
+/time : 8.84021,
+/prefix : "1128185216.4823"

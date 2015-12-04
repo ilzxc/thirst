@@ -1,0 +1,45 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "oboe",
+	/samples : ["Ob-dsclrd-fngr-C#6-mf.aif", "Ob-stacc-D#6-mf.aif", "Ob-lip-gl-asc-fst-G6-mf.aif", "Ob-lip-gl-asc-slow-G6-mf.aif", "Ob-harm-fngr-C6-f.aif", "Ob-harm-fngr-C6-p.aif"],
+	/suffix : "_oboe_reartic.wav",
+	/time : 3.18702,
+	/events : [{
+		/pitch : 1.25992,
+		/buffer : "oboe.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.892383, 30., 0.70345, 0.142303, 56.3092, -0.552513, 0., 30., 0.]
+	}, {
+		/pitch : 1.33484,
+		/buffer : "oboe.reartic.6",
+		/event/time : 0.166309,
+		/envelope : [0., 0., 0., 0.844007, 30., 0.644847, 0.124149, 870.474, -0.404148, 0., 30., 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "oboe.reartic.1",
+		/event/time : 1.09678,
+		/envelope : [0., 0., 1., 0.877125, 198.682, -0.363, 0.877125, 58.2422, 1., 0., 324.622, -0.620703]
+	}, {
+		/pitch : 1.12246,
+		/buffer : "oboe.reartic.2",
+		/event/time : 1.67833,
+		/envelope : [0., 0., 0., 0.763008, 30., -0.63649, 0.0561239, 521.546, -0.556508, 0., 30., 0.]
+	}, {
+		/pitch : 1.33484,
+		/buffer : "oboe.reartic.5",
+		/event/time : 2.25987,
+		/envelope : [0., 0., 0., 0., 348.928, 0.]
+	}, {
+		/pitch : 0.890899,
+		/buffer : "oboe.reartic.4",
+		/event/time : 2.6088,
+		/envelope : [0., 0., 1., 0.822063, 104.146, 0.630345, 0.822063, 13.0926, 1., 0., 347.998, -0.287215]
+	}, {
+		/pitch : 0.890899,
+		/buffer : "oboe.reartic.3",
+		/event/time : 3.07404,
+		/envelope : [0., 162.983, 0.]
+	}]
+},
+/time : 6.52553,
+/prefix : "1128181241.2344"

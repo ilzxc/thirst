@@ -1,0 +1,16 @@
+/score : [{
+
+}, {
+	/engine : "perc",
+	/samples : "Vc-pizz-lv-E4-pp-1c.aif",
+	/suffix : "_cello_perc.wav",
+	/time : 3.,
+	/pitch : 1.,
+	/amp : [0., 0., 0.623223, 20, 0.623223, 8960., 0., 20]
+}, {
+
+}, {
+
+}],
+/time : 4.,
+/prefix : "112817516.1417"

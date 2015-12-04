@@ -1,0 +1,25 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "violin",
+	/samples : ["Vn-nonvib-C#6-ff-2c.aif", "Vn-ord-C#6-pp-1c.aif", "Vn-nonvib-C#6-mf-2c.aif"],
+	/suffix : "_violin_reartic.wav",
+	/time : 1.79157,
+	/events : [{
+		/pitch : 1.02403,
+		/buffer : "violin.reartic.2",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.0972874, 30., -0.124663, 0.780067, 55.9743, 0.113643, 0., 30., 0.]
+	}, {
+		/pitch : 1.02403,
+		/buffer : "violin.reartic.1",
+		/event/time : 0.165974,
+		/envelope : [0., 0., 0., 0.0719329, 30., -0.632827, 0.996095, 1099.74, -0.348447, 0., 30., 0.]
+	}, {
+		/pitch : 1.02403,
+		/buffer : "violin.reartic.3",
+		/event/time : 1.32572,
+		/envelope : [0., 0., 0., 0., 515.848, 0.]
+	}]
+},
+/time : 5.04419,
+/prefix : "112531751.2940"

@@ -1,0 +1,20 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "viola",
+	/samples : ["Va-trem-C7-mf-1c.aif", "Va-ord-C7-pp-1c.aif"],
+	/suffix : "_viola_reartic.wav",
+	/time : 1.99521,
+	/events : [{
+		/pitch : 1.25992,
+		/buffer : "viola.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.121727, 30., 0.646027, 0.906062, 1295.65, 0.192146, 0., 30., 0.]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "viola.reartic.2",
+		/event/time : 1.40565,
+		/envelope : [0., 0., 1., 0.56144, 310.398, 0.433991, 0.56144, 111.998, 1., 0., 217.168, -0.255126]
+	}]
+},
+/time : 5.04419,
+/prefix : "11253185.3010"

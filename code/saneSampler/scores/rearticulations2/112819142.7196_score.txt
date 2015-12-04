@@ -1,0 +1,25 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "violin",
+	/samples : ["Vn-ord_crush-C7-mf-1c.aif", "Vn-pizz-lv-C7-mf-1c.aif"],
+	/suffix : "_violin_reartic.wav",
+	/time : 2.99048,
+	/events : [{
+		/pitch : 1.21468,
+		/buffer : "violin.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.0690236, 30., -0.790238, 0.804544, 809.329, -0.76591, 0., 30., 0.]
+	}, {
+		/pitch : 1.21468,
+		/buffer : "violin.reartic.1",
+		/event/time : 0.919329,
+		/envelope : [0., 0., 0., 0.660324, 3.7429, 0.220579, 0.810907, 188.123, -0.58628, 0.61421, 141.952, -0.653762, 0., 783.891, 0.]
+	}, {
+		/pitch : 1.21468,
+		/buffer : "violin.reartic.2",
+		/event/time : 2.03704,
+		/envelope : [0., 0., 1., 0.777414, 440.419, 0.110529, 0.777414, 47.1925, 1., 0., 515.836, -0.031005]
+	}]
+},
+/time : 6.10909,
+/prefix : "112819142.7196"

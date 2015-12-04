@@ -1,0 +1,25 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "viola",
+	/samples : ["Va-nonvib-F3-pp-4c.aif", "Va-tasto_ord-E3-mf-4c.aif"],
+	/suffix : "_viola_reartic.wav",
+	/time : 3.95001,
+	/events : [{
+		/pitch : 1.01557,
+		/buffer : "viola.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.78169, 729.813, 0.389773, 0.78169, 294.847, 1., 0., 464.817, 0.259091]
+	}, {
+		/pitch : 1.07596,
+		/buffer : "viola.reartic.2",
+		/event/time : 1.53948,
+		/envelope : [0., 0., 0., 0.534578, 26.5508, 0.0321647, 0.56274, 189.431, 0.379655, 0.430961, 150.501, -0.0640746, 0.512826, 127.136, 0.315691, 0., 725.044, 0.]
+	}, {
+		/pitch : 1.07596,
+		/buffer : "viola.reartic.2",
+		/event/time : 2.75814,
+		/envelope : [0., 0., 0., 0.885274, 30., 0.38632, 0.141276, 1181.87, 0.0611832, 0., 30., 0.]
+	}]
+},
+/time : 7.06678,
+/prefix : "112521223.3337"

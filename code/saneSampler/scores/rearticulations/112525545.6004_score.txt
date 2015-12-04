@@ -1,0 +1,35 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "violin",
+	/samples : ["Vn-sfz-B6-f-1c.aif", "Vn-trem-E7-ff-1c.aif", "Vn-trem-E7-mf-1c.aif", "Vn-crush_ord-B6-mf-1c.aif", "Vn-legno-tratto-C7-mf-1c.aif"],
+	/suffix : "_violin_reartic.wav",
+	/time : 4.67566,
+	/events : [{
+		/pitch : 1.08058,
+		/buffer : "violin.reartic.2",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.888321, 766.625, -0.200894, 0.888321, 115.412, 1., 0., 488.128, -0.385897]
+	}, {
+		/pitch : 1.36145,
+		/buffer : "violin.reartic.5",
+		/event/time : 1.42017,
+		/envelope : [0., 0., 0., 0.436291, 492.483, -0.126312, 0., 254.88, 0.]
+	}, {
+		/pitch : 1.4424,
+		/buffer : "violin.reartic.1",
+		/event/time : 2.16753,
+		/envelope : [0., 0., 0., 0.905815, 312.245, -0.437317, 0., 310.557, 0.]
+	}, {
+		/pitch : 1.08058,
+		/buffer : "violin.reartic.3",
+		/event/time : 2.79033,
+		/envelope : [0., 0., 0., 0.0904322, 30., -0.33036, 0.955197, 936.484, 0.66186, 0., 30., 0.]
+	}, {
+		/pitch : 1.4424,
+		/buffer : "violin.reartic.4",
+		/event/time : 3.78681,
+		/envelope : [0., 0., 0., 0.684529, 201.036, -0.41704, 0.116797, 183.372, 0.205076, 0.888854, 240.963, 0.355093, 0., 313.477, 0.]
+	}]
+},
+/time : 7.34084,
+/prefix : "112525545.6004"

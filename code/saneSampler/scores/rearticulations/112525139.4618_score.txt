@@ -1,0 +1,35 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "viola",
+	/samples : ["Va-crush_ord-G#3-mf-4c.aif", "Va-ord_pont-A3-mf-3c.aif", "Va-tasto_pont-G#3-mf-3c.aif", "Va-tasto_ord-A#3-mf-4c.aif", "Va-tasto-A3-mf-4c.aif"],
+	/suffix : "_viola_reartic.wav",
+	/time : 2.15464,
+	/events : [{
+		/pitch : 1.05946,
+		/buffer : "viola.reartic.1",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.921668, 543.226, 0.64738, 0.921668, 115.889, 1., 0., 400.627, -0.672462]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.5",
+		/event/time : 1.10974,
+		/envelope : [0., 0., 0., 0.0738195, 30., 0.390406, 0.921952, 337.403, 0.0889935, 0., 30., 0.]
+	}, {
+		/pitch : 1.05946,
+		/buffer : "viola.reartic.3",
+		/event/time : 1.50714,
+		/envelope : [0., 0., 1., 0.804424, 165.313, -0.00356432, 0.804424, 76.3707, 1., 0., 155.72, -0.267184]
+	}, {
+		/pitch : 0.943874,
+		/buffer : "viola.reartic.4",
+		/event/time : 1.90455,
+		/envelope : [0., 0., 0., 0.801318, 30., 0.205904, 0.0741016, 72.4677, 0.0404142, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.2",
+		/event/time : 2.03702,
+		/envelope : [0., 0., 1., 0.508416, 111.963, 0.222203, 0.508416, 13.2501, 1., 0., 42.412, -0.571476]
+	}]
+},
+/time : 5.67814,
+/prefix : "112525139.4618"

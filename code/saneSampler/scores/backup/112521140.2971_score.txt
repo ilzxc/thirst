@@ -1,0 +1,60 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "viola",
+	/samples : ["Va-trem-G#6-mf-1c.aif", "Va-ord-G#6-pp-1c.aif", "Va-tasto-E6-mf-1c.aif", "Va-cresc-G6-ppff-1c.aif", "Va-trem-G#6-ff-1c.aif", "Va-nonvib-G#6-mf-1c.aif", "Va-crush_ord-A6-mf-1c.aif", "Va-nonvib-G#6-pp-1c.aif", "Va-decr-G#6-ffpp-1c.aif", "Va-trem-G#6-pp-1c.aif"],
+	/suffix : "_viola_reartic.wav",
+	/time : 5.75656,
+	/events : [{
+		/pitch : 1.,
+		/buffer : "viola.reartic.5",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.643834, 288.332, -0.604446, 0.643834, 1.97855, 1., 0., 581.042, -0.727376]
+	}, {
+		/pitch : 0.943874,
+		/buffer : "viola.reartic.7",
+		/event/time : 0.921353,
+		/envelope : [0., 0., 0., 0., 622.395, 0.]
+	}, {
+		/pitch : 1.05946,
+		/buffer : "viola.reartic.4",
+		/event/time : 1.54375,
+		/envelope : [0., 0., 1., 0.530924, 117.378, 0.550057, 0.530924, 0.92182, 1., 0., 379.616, -0.138773]
+	}, {
+		/pitch : 1.25992,
+		/buffer : "viola.reartic.3",
+		/event/time : 2.04166,
+		/envelope : [0., 0., 0., 0.059682, 30., -0.399333, 0.867702, 935.832, -0.612667, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.9",
+		/event/time : 3.0375,
+		/envelope : [0., 0., 1., 0.650013, 51.7553, 0.164041, 0.650013, 34.9463, 1., 0., 162.256, 0.176521]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.10",
+		/event/time : 3.28645,
+		/envelope : [0., 0., 0., 0.0879186, 30., -0.0964207, 0.981981, 811.353, 0.119228, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.8",
+		/event/time : 4.15781,
+		/envelope : [0., 0., 1., 0.991555, 223.399, -0.589775, 0.991555, 21.427, 1., 0., 128.611, 0.265312]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.6",
+		/event/time : 4.53124,
+		/envelope : [0., 0., 0., 0., 497.916, 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.1",
+		/event/time : 5.02916,
+		/envelope : [0., 0., 0., 0.961309, 30., -0.0736517, 0.123405, 313.437, 0.120314, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.2",
+		/event/time : 5.4026,
+		/envelope : [0., 0., 0., 0.111319, 30., 0.630782, 0.928692, 343.958, -0.562654, 0., 30., 0.]
+	}]
+},
+/time : 8.15319,
+/prefix : "112521140.2971"

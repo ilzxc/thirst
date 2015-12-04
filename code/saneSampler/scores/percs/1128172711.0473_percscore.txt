@@ -1,0 +1,16 @@
+/score : [{
+	/engine : "perc",
+	/samples : "Ob-stacc-G5-mf.aif",
+	/suffix : "_oboe_perc.wav",
+	/time : 3.,
+	/pitch : 1.,
+	/amp : [0., 0., 0.897677, 20, 0.897677, 8960., 0., 20]
+}, {
+
+}, {
+
+}, {
+
+}],
+/time : 4.,
+/prefix : "1128172711.0473"

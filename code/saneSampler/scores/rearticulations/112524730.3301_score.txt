@@ -1,0 +1,25 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "viola",
+	/samples : ["Va-art-harm-trem-B7-mf-1c.aif", "Va-art-harm-B7-mf-1c.aif"],
+	/suffix : "_viola_reartic.wav",
+	/time : 3.4261,
+	/events : [{
+		/pitch : 1.,
+		/buffer : "viola.reartic.2",
+		/event/time : 0.05,
+		/envelope : [0., 0., 0., 0.0992721, 30., 0.347052, 0.828389, 881.559, -0.0681356, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.2",
+		/event/time : 0.991559,
+		/envelope : [0., 0., 0., 0.998176, 30., -0.822761, 0.1155, 1419.59, 0.190084, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "viola.reartic.1",
+		/event/time : 2.47115,
+		/envelope : [0., 0., 0., 0.871647, 30., -0.757447, 0.095242, 944.951, 0.0531275, 0., 30., 0.]
+	}]
+},
+/time : 5.94225,
+/prefix : "112524730.3301"

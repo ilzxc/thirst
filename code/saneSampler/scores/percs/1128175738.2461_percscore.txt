@@ -1,0 +1,21 @@
+/score : [{
+	/engine : "perc",
+	/samples : "Ob-stacc-G6-mf.aif",
+	/suffix : "_oboe_perc.wav",
+	/time : 3.,
+	/pitch : 1.16242,
+	/amp : [0., 0., 0.756206, 20, 0.756206, 8960., 0., 20]
+}, {
+
+}, {
+	/engine : "perc",
+	/samples : "Vn-stacc-G#6-mf-1c.aif",
+	/suffix : "_violin_perc.wav",
+	/time : 3.,
+	/pitch : 0.943874,
+	/amp : [0., 0., 0.558607, 20, 0.558607, 8960., 0., 20]
+}, {
+
+}],
+/time : 4.,
+/prefix : "1128175738.2461"

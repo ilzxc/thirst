@@ -1,0 +1,60 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "cello",
+	/samples : ["Vc-nonvib-B3-pp-3c.aif", "Vc-pont-B3-mf-2c.aif", "Vc-ord_pont-B3-mf-1c.aif", "Vc-nonvib-B3-ff-3c.aif", "Vc-tasto_pont-A#3-mf-1c.aif", "Vc-nonvib-B3-mf-2c.aif", "Vc-nonvib-B3-ff-1c.aif", "Vc-pont_ord-B3-mf-1c.aif"],
+	/suffix : "_cello_reartic.wav",
+	/time : 4.85373,
+	/events : [{
+		/pitch : 1.05946,
+		/buffer : "cello.reartic.5",
+		/event/time : 0.05,
+		/envelope : [0., 115.763, 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "cello.reartic.2",
+		/event/time : 0.165763,
+		/envelope : [0., 0., 0., 0.0885745, 181.868, 0.421219, 0.189394, 231.417, 0.0588444, 0., 397.052, 0.]
+	}, {
+		/pitch : 1.05946,
+		/buffer : "cello.reartic.5",
+		/event/time : 0.9761,
+		/envelope : [0., 0., 0., 0.839673, 30., -0.700603, 0.0982296, 634.575, 0.465095, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "cello.reartic.3",
+		/event/time : 1.67068,
+		/envelope : [0., 0., 0., 0.808336, 30., -0.190064, 0.141808, 55.7626, 0.477591, 0., 30., 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "cello.reartic.1",
+		/event/time : 1.78644,
+		/envelope : [0., 0., 0., 0.169697, 220.902, 0.431007, 0., 589.435, 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "cello.reartic.7",
+		/event/time : 2.59678,
+		/envelope : [0., 231.525, 0.]
+	}, {
+		/pitch : 1.05946,
+		/buffer : "cello.reartic.5",
+		/event/time : 2.8283,
+		/envelope : [0., 0., 1., 0.859403, 117.101, -0.594695, 0.859403, 57.5544, 1., 0., 288.395, 0.558854]
+	}, {
+		/pitch : 1.,
+		/buffer : "cello.reartic.6",
+		/event/time : 3.29135,
+		/envelope : [0., 0., 0., 0.574333, 285.292, 0.555864, 0.323171, 271.595, 0.663419, 0.263829, 229.1, -0.615102, 0., 487.401, 0.]
+	}, {
+		/pitch : 1.,
+		/buffer : "cello.reartic.8",
+		/event/time : 4.56474,
+		/envelope : [0., 0., 1., 0.650438, 47.0147, -0.268906, 0.650438, 13.0722, 1., 0., 55.6757, 0.114441]
+	}, {
+		/pitch : 1.,
+		/buffer : "cello.reartic.4",
+		/event/time : 4.6805,
+		/envelope : [0., 223.231, 0.]
+	}]
+},
+/time : 7.19106,
+/prefix : "1128183449.9463"

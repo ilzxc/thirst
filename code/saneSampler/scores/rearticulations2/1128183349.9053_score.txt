@@ -1,0 +1,60 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "oboe",
+	/samples : ["Ob-ord-E4-ff.aif", "Ob-lip-gl-asc-slow-F4-mf.aif", "Ob-ord-E4-mf.aif", "Ob-flatt-E4-mf.aif", "Ob-decresc-D4-ffpp.aif", "Ob-lip-gl-asc-fst-F4-mf.aif", "Ob-lip-gl-dsc-mod-F4-mf.aif"],
+	/suffix : "_oboe_reartic.wav",
+	/time : 6.80264,
+	/events : [{
+		/pitch : 0.941163,
+		/buffer : "oboe.reartic.7",
+		/event/time : 0.05,
+		/envelope : [0., 268.642, 0.]
+	}, {
+		/pitch : 0.941163,
+		/buffer : "oboe.reartic.2",
+		/event/time : 0.318642,
+		/envelope : [0., 0., 0., 0.148719, 30., -0.56396, 0.762651, 1417.53, 0.843599, 0., 30., 0.]
+	}, {
+		/pitch : 0.997128,
+		/buffer : "oboe.reartic.4",
+		/event/time : 1.79618,
+		/envelope : [0., 0., 0., 0.93402, 30., -0.168563, 0.0775838, 342.964, -0.649539, 0., 30., 0.]
+	}, {
+		/pitch : 0.941163,
+		/buffer : "oboe.reartic.6",
+		/event/time : 2.19914,
+		/envelope : [0., 0., 1., 0.771814, 108.095, 0.549831, 0.771814, 60.3425, 1., 0., 234.526, 0.670553]
+	}, {
+		/pitch : 1.11924,
+		/buffer : "oboe.reartic.5",
+		/event/time : 2.6021,
+		/envelope : [0., 0., 1., 0.915941, 321.831, 0.728463, 0.915941, 16.4427, 1., 0., 1139.26, 0.603346]
+	}, {
+		/pitch : 0.997128,
+		/buffer : "oboe.reartic.4",
+		/event/time : 4.07964,
+		/envelope : [0., 0., 1., 0.816676, 193.751, -0.422638, 0.816676, 66.0384, 1., 0., 143.175, 0.255549]
+	}, {
+		/pitch : 0.997128,
+		/buffer : "oboe.reartic.1",
+		/event/time : 4.4826,
+		/envelope : [0., 0., 0., 0.935833, 30., 0.0388558, 0.132822, 611.606, 0.364778, 0., 30., 0.]
+	}, {
+		/pitch : 0.941163,
+		/buffer : "oboe.reartic.7",
+		/event/time : 5.15421,
+		/envelope : [0., 0., 1., 0.936999, 556.772, 0.465418, 0.936999, 23.7473, 1., 0., 359.729, 0.554503]
+	}, {
+		/pitch : 0.941163,
+		/buffer : "oboe.reartic.2",
+		/event/time : 6.09446,
+		/envelope : [0., 0., 0., 0.140283, 30., 0.128007, 0.849096, 611.606, -0.337812, 0., 30., 0.]
+	}, {
+		/pitch : 0.997128,
+		/buffer : "oboe.reartic.3",
+		/event/time : 6.76606,
+		/envelope : [0., 0., 1., 0.760428, 46.31, 0.241305, 0.760428, 8.22157, 1., 0., 32.0488, 0.106649]
+	}]
+},
+/time : 8.95205,
+/prefix : "1128183349.9053"

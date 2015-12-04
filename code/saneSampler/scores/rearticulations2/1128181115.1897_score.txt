@@ -1,0 +1,40 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "cello",
+	/samples : ["Vc-ord_tasto-D#5-mf-1c.aif", "Vc-trem-A5-mf-1c.aif", "Vc-art-harm-trem-A5-mf-2c.aif", "Vc-art-harm-A5-mf-2c.aif", "Vc-nonvib-A5-pp-1c.aif"],
+	/suffix : "_cello_reartic.wav",
+	/time : 5.2659,
+	/events : [{
+		/pitch : 1.00961,
+		/buffer : "cello.reartic.5",
+		/event/time : 0.05,
+		/envelope : [0., 0., 1., 0.80059, 961.628, -0.410632, 0.80059, 52.9287, 1., 0., 390.966, -0.427229]
+	}, {
+		/pitch : 1.00961,
+		/buffer : "cello.reartic.2",
+		/event/time : 1.45552,
+		/envelope : [0., 0., 0., 0.677324, 49.3511, -0.183275, 0.043269, 185.107, 0.116301, 0.951484, 70.6042, -0.228908, 0., 844.91, 0.]
+	}, {
+		/pitch : 1.00961,
+		/buffer : "cello.reartic.3",
+		/event/time : 2.60549,
+		/envelope : [0., 0., 0., 0., 383.324, 0.]
+	}, {
+		/pitch : 1.4278,
+		/buffer : "cello.reartic.1",
+		/event/time : 2.98882,
+		/envelope : [0., 0., 0., 0.265738, 86.5322, 0.551041, 0., 1063.44, 0.]
+	}, {
+		/pitch : 1.00961,
+		/buffer : "cello.reartic.3",
+		/event/time : 4.13879,
+		/envelope : [0., 0., 0., 0., 766.648, 0.]
+	}, {
+		/pitch : 1.00961,
+		/buffer : "cello.reartic.4",
+		/event/time : 4.90544,
+		/envelope : [0., 0., 1., 0.826016, 283.115, -0.38986, 0.826016, 10.9316, 1., 0., 116.411, 0.397645]
+	}]
+},
+/time : 7.62992,
+/prefix : "1128181115.1897"

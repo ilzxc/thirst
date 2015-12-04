@@ -1,0 +1,10 @@
+/score : {
+	/engine : "reartic",
+	/instrument : "violin",
+	/samples,
+	/suffix : "_violin_reartic.wav",
+	/time : 4.54076,
+	/events
+},
+/time : 8.27981,
+/prefix : "112819219.7317"

@@ -1,0 +1,78 @@
+/score : {
+	/engine : "rapids",
+	/instrument : "oboe",
+	/samples : ["Ob-stacc-G6-mf.aif", "Ob-stacc-G4-mf.aif", "Ob-stacc-B5-mf.aif", "Ob-stacc-D#6-mf.aif", "Ob-stacc-B4-mf.aif", "Ob-stacc-D#4-mf.aif"],
+	/suffix : "_oboe_rapids.wav",
+	/time : 3.,
+	/events : [{
+		/pitch : 0.89115,
+		/buffer : "oboe.rapids.5",
+		/event/time : 0.05
+	}, {
+		/pitch : 1.09898,
+		/buffer : "oboe.rapids.1",
+		/event/time : 0.181028
+	}, {
+		/pitch : 1.09898,
+		/buffer : "oboe.rapids.1",
+		/event/time : 0.312055
+	}, {
+		/pitch : 1.09898,
+		/buffer : "oboe.rapids.1",
+		/event/time : 0.443083
+	}, {
+		/pitch : 1.09898,
+		/buffer : "oboe.rapids.1",
+		/event/time : 0.574111
+	}, {
+		/pitch : 1.09898,
+		/buffer : "oboe.rapids.1",
+		/event/time : 0.705138
+	}, {
+		/pitch : 1.09898,
+		/buffer : "oboe.rapids.1",
+		/event/time : 0.836166
+	}, {
+		/pitch : 0.992557,
+		/buffer : "oboe.rapids.4",
+		/event/time : 0.967194
+	}, {
+		/pitch : 0.915629,
+		/buffer : "oboe.rapids.6",
+		/event/time : 1.09822
+	}, {
+		/pitch : 0.980172,
+		/buffer : "oboe.rapids.2",
+		/event/time : 1.22925
+	}, {
+		/pitch : 0.980172,
+		/buffer : "oboe.rapids.2",
+		/event/time : 1.36028
+	}, {
+		/pitch : 0.980172,
+		/buffer : "oboe.rapids.2",
+		/event/time : 1.4913
+	}, {
+		/pitch : 0.980172,
+		/buffer : "oboe.rapids.2",
+		/event/time : 1.62233
+	}, {
+		/pitch : 0.980172,
+		/buffer : "oboe.rapids.2",
+		/event/time : 1.75336
+	}, {
+		/pitch : 0.980172,
+		/buffer : "oboe.rapids.2",
+		/event/time : 1.88439
+	}, {
+		/pitch : 1.42001,
+		/buffer : "oboe.rapids.1",
+		/event/time : 2.01542
+	}, {
+		/pitch : 0.970083,
+		/buffer : "oboe.rapids.3",
+		/event/time : 2.14644
+	}]
+},
+/time : 4.,
+/prefix : "1125223152.0440"
